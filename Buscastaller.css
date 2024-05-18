@@ -63,6 +63,9 @@ body{
   background-color: #333;
   color: #fff;
 }
+.mobile-nav-block{
+  display: none;
+}
 /*----------- Search-Block  --------------*/
 .Search-Block{
   display: flex;
@@ -360,4 +363,1935 @@ footer{
   font-size: 1.3rem;
 }
 
+@media(max-width:1860px){
+  /*----------- Hero-Block  --------------*/
+.Hero-Block{
+  background-image:url("Images/Img/Landing Page/carBackground.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+/*----------- nav-Block  --------------*/
+.Nav-Block{
+  position: fixed;
+  width: 95%;
+  height: 5vh;
+  padding: 3rem;
+  margin-top:-.6rem ;
+  display: flex;
+  align-items: center;
 
+  justify-content: space-between;
+}
+.Nav-Block-Logo a img{
+ width: 20rem;
+}
+.Nav-Block-Login a img{
+  width: 2.5rem;
+}
+.nav-links ul{
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+
+}
+.nav-links ul li{
+  list-style: none;
+}
+.nav-links ul li a{
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: space-evenly;
+  color: rgb(255, 255, 255);
+  text-decoration:none ;
+}
+.nav-links ul li::after{
+  content:'';
+  width:0%;
+  height:5px;
+  background:#931d36;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width:100%;
+}
+.scrolled {
+  background-color: #333;
+  color: #fff;
+}
+/*----------- Search-Block  --------------*/
+.Search-Block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:auto ;
+}
+.Search-Block h1{
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 25rem;
+  text-shadow: 2px 2px #151515;
+}
+.search-Block-content{
+  display: flex;
+  align-items: center;
+}
+input {
+  width: 500px;
+  height:60px ;
+  margin: 0px;
+  border-radius: 10px;
+  font-size:20px;
+}
+.redBtnblock{
+  display: none;
+}
+.searchBtn{
+  height: 60px;
+  font-size:30px;
+  padding:10px 40px ;
+  border-radius: 10px;
+  background:#931D36;
+  color: #cecece;
+  cursor: pointer;
+  margin: 15px 5px;
+}
+.in{
+  background: #cecece;
+  border: #040203 2px solid;
+}
+.in::placeholder {
+  color: #931d36;
+  font-size: 1.2em;
+  padding: 20px;
+  font-size: 30px;
+}
+.in:focus  {
+  color:  #000000;
+  font-size: 30px;
+  padding: 10px;
+}
+.lower-Nave-bar{
+  display: none;
+}
+.searchBtn{
+  font-size:30px;
+  padding:10px 40px ;
+  border-radius: 10px;
+  background:#931D36;
+  color: #cecece;
+  cursor: pointer;
+
+}
+/* ---------- Offering ------------*/
+.offering h1{
+  color:#fff;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+/* ------- Btn-Offering --------*/
+.Btn-offering{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide button{
+  margin: 1rem;
+  padding: 2rem;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color:transparent;
+  border: #931d36 10px solid;
+}
+.swiper-slide img{
+  max-width: 100%; 
+  max-height: 120px; 
+  display: block; 
+  margin: auto; 
+}
+.swiper-slide h1{
+  font-size: 2rem; 
+}
+.slideshow-container{
+  display: none;
+}
+/* ------- Btn-Offering-hidden --------*/
+.block{
+  display: flex;
+  color: #cecece;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.about-block-header{
+  margin: 5rem 20rem;
+}
+.about-block-header h1{
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  color: #931D36;
+}
+.line-2{
+  width: 100%;
+  height: 4px;
+  background-color: #cecece;
+}
+/* ------- Btn-Offering-hidden-TEC-One --------*/
+.about-block{
+  display: none;
+}
+.blockTwo{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.blockTwo img{
+ margin: 2rem;
+}
+.Text-Block{
+  width: 40%;
+}
+.Text-Block h2{
+  margin: 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+.Text-Block p{
+  font-size: 1.7rem;
+  text-align: justify;
+}
+/* ------- Ranking --------*/
+.Ranking-Block{
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.S-banner{
+  margin: 5rem 20rem;
+}
+.S-banner h1{
+  font-size:4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#AC1836 ;
+}
+.line-1{
+  width: 100%;
+  height: 4px;
+  background-color: #cecece;
+}
+a:link {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: #931d36;
+}
+a:active {
+  color: white;
+} 
+.Rank-text{
+  margin:10px ;
+  padding: 50px 0px;
+  font-size:4rem;
+  cursor: pointer;
+}
+/* ------- Mecanico --------*/
+#Meca-block {
+  text-align: center;
+  background-image:url("Images/Img/Landing Page/mecanica.webp");
+  background-size: cover;
+  background-attachment: fixed;  
+}
+/* ------- Pintura --------*/
+#Pintura-block {
+  text-align: center;
+  background-image:url("Images/Img/Landing Page/paint.webp");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;  
+}
+/* ------- Detailer --------*/
+#Detail-block {
+  text-align: center;
+  background-image:url("Images/Img/Landing Page/carwash4.webp");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;  
+}
+/* ------- Electrico --------*/
+#Electrico-block {
+  text-align: center;
+  background-image:url("Images/Img/Landing Page/ely.webp");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;  
+}
+/* ------- Autoboutique --------*/
+#Autoboutique-block {
+  text-align: center;
+  background-image:url("Images/Img/Landing Page/rim.webp");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;  
+}
+/* ------- Detailer --------*/
+#Detailer-block {
+  text-align: center;
+  background-image:url("images/pics/carwash4.webp");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;  
+}
+/* ------- videoAniamation --------*/
+.videoAniamation{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.videoAniamation h1{
+  color: #cecece;
+  font-size: 3rem;
+  text-align: center;
+
+}
+.video{
+  width: 50rem;
+  height: 30rem;
+}
+/* ------- Footer --------*/
+footer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 10rem;
+  margin-top: 4rem;
+  justify-content: center;
+  background-color: #931D36;
+}
+.blackicon{
+  display: none;
+}
+.footer-logo img{
+  width: 30rem;
+}
+.footerTop{
+  gap: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem;
+}
+.mediaIcons i{
+  margin: 0 1rem;
+  color: #cecece;
+  font-size: 2rem;
+}
+.footer-nav-links ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: 2rem;
+  list-style: none;
+}
+.footer-nav-links ul li{
+  margin: 0 2rem;
+  display: flex;
+}
+.footer-nav-links a:link {
+  color: white;
+  text-decoration: none;
+}
+.footer-nav-links a:hover {
+  color: #151515;
+}
+.footer-bottom{
+  display: flex;
+  justify-content:center;
+  padding:1rem 0 ;
+  color: #cecece;
+  font-size: 1.3rem;
+}
+}
+@media(max-width:1265px){
+  /*----------- Hero-Block  --------------*/
+.Hero-Block{
+  background-image:url("Images/Img/Landing Page/carBackground.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+/*----------- nav-Block  --------------*/
+.Nav-Block{
+  position: fixed;
+  width: 95%;
+  height: 5vh;
+  padding: 3rem;
+  margin-top:-.6rem ;
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+}
+.Nav-Block-Logo a img{
+ width: 20rem;
+}
+.Nav-Block-Login a img{
+  width: 2.5rem;
+}
+.nav-links ul{
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+
+}
+.nav-links ul li{
+  list-style: none;
+}
+.nav-links ul li a{
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: space-evenly;
+  color: rgb(255, 255, 255);
+  text-decoration:none ;
+}
+.nav-links ul li::after{
+  content:'';
+  width:0%;
+  height:5px;
+  background:#931d36;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width:100%;
+}
+.scrolled {
+  background-color: #333;
+  color: #fff;
+}
+/*----------- Search-Block  --------------*/
+.Search-Block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:auto ;
+}
+.Search-Block h1{
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 25rem;
+  text-shadow: 2px 2px #151515;
+}
+.search-Block-content{
+  display: flex;
+  align-items: center;
+}
+input {
+  width: 500px;
+  height:60px ;
+  margin: 0px;
+  border-radius: 10px;
+  font-size:20px;
+}
+.redBtnblock{
+  display: none;
+}
+.searchBtn{
+  height: 60px;
+  font-size:30px;
+  padding:10px 40px ;
+  border-radius: 10px;
+  background:#931D36;
+  color: #cecece;
+  cursor: pointer;
+  margin: 15px 5px;
+}
+.in{
+  background: #cecece;
+  border: #040203 2px solid;
+}
+.in::placeholder {
+  color: #931d36;
+  font-size: 1.2em;
+  padding: 20px;
+  font-size: 30px;
+}
+.in:focus  {
+  color:  #000000;
+  font-size: 30px;
+  padding: 10px;
+}
+.lower-Nave-bar{
+  display: none;
+}
+.searchBtn{
+  font-size:30px;
+  padding:10px 40px ;
+  border-radius: 10px;
+  background:#931D36;
+  color: #cecece;
+  cursor: pointer;
+
+}
+/* ---------- Offering ------------*/
+.offering h1{
+  color:#fff;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+/* ------- Btn-Offering --------*/
+.Btn-offering{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide button{
+  margin: 1rem;
+  padding: 2rem;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color:transparent;
+  border: #931d36 10px solid;
+}
+.swiper-slide img{
+  max-width: 100%; 
+  max-height: 120px; 
+  display: block; 
+  margin: auto; 
+}
+.swiper-slide h1{
+  font-size: 2rem; 
+}
+.slideshow-container{
+  display: none;
+}
+/* ------- Btn-Offering-hidden --------*/
+.block{
+  display: flex;
+  color: #cecece;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.about-block-header{
+  margin: 5rem 20rem;
+}
+.about-block-header h1{
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  color: #931D36;
+}
+.line-2{
+  width: 100%;
+  height: 4px;
+  background-color: #cecece;
+}
+/* ------- Btn-Offering-hidden-TEC-One --------*/
+.about-block{
+  display: none;
+}
+.blockTwo{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.blockTwo img{
+ margin: 2rem;
+}
+.Text-Block{
+  width: 40%;
+}
+.Text-Block h2{
+  margin: 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+.Text-Block p{
+  font-size: 1.7rem;
+  text-align: justify;
+}
+/* ------- Ranking --------*/
+.Ranking-Block{
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.S-banner{
+  margin: 5rem 20rem;
+}
+.S-banner h1{
+  font-size:4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#AC1836 ;
+}
+.line-1{
+  width: 100%;
+  height: 4px;
+  background-color: #cecece;
+}
+a:link {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: #931d36;
+}
+a:active {
+  color: white;
+} 
+.Rank-text{
+  margin:10px ;
+  padding: 50px 0px;
+  font-size:4rem;
+  cursor: pointer;
+}
+/* ------- Mecanico --------*/
+#Meca-block {
+  text-align: center;
+  background-image:url("Images/Img/Landing Page/mecanica.webp");
+  background-size: cover;
+  background-attachment: fixed;  
+}
+/* ------- Pintura --------*/
+#Pintura-block {
+  text-align: center;
+  background-image:url("Images/Img/Landing Page/paint.webp");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;  
+}
+/* ------- Detailer --------*/
+#Detail-block {
+  text-align: center;
+  background-image:url("Images/Img/Landing Page/carwash4.webp");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;  
+}
+/* ------- Electrico --------*/
+#Electrico-block {
+  text-align: center;
+  background-image:url("Images/Img/Landing Page/ely.webp");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;  
+}
+/* ------- Autoboutique --------*/
+#Autoboutique-block {
+  text-align: center;
+  background-image:url("Images/Img/Landing Page/rim.webp");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;  
+}
+/* ------- Detailer --------*/
+#Detailer-block {
+  text-align: center;
+  background-image:url("images/pics/carwash4.webp");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;  
+}
+/* ------- videoAniamation --------*/
+.videoAniamation{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.videoAniamation h1{
+  color: #cecece;
+  font-size: 3rem;
+  text-align: center;
+
+}
+.video{
+  width: 50rem;
+  height: 30rem;
+}
+/* ------- Footer --------*/
+footer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 10rem;
+  margin-top: 4rem;
+  justify-content: center;
+  background-color: #931D36;
+}
+.blackicon{
+  display: none;
+}
+.footer-logo img{
+  width: 30rem;
+}
+.footerTop{
+  gap: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem;
+}
+.mediaIcons i{
+  margin: 0 1rem;
+  color: #cecece;
+  font-size: 2rem;
+}
+.footer-nav-links ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: 2rem;
+  list-style: none;
+}
+.footer-nav-links ul li{
+  margin: 0 2rem;
+  display: flex;
+}
+.footer-nav-links a:link {
+  color: white;
+  text-decoration: none;
+}
+.footer-nav-links a:hover {
+  color: #151515;
+}
+.footer-bottom{
+  display: flex;
+  justify-content:center;
+  padding:1rem 0 ;
+  color: #cecece;
+  font-size: 1.3rem;
+}
+}
+@media(max-width:1100px){
+  /*----------- Hero-Block  --------------*/
+.Hero-Block{
+  background-image:url("Images/Img/Landing Page/carBackground.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+/*----------- nav-Block  --------------*/
+.Nav-Block{
+  position: fixed;
+  width: 95%;
+  height: 5vh;
+  padding: 3rem;
+  margin-top:-.6rem ;
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+}
+.Nav-Block-Logo a img{
+ width: 15rem;
+}
+.Nav-Block-Login a img{
+  width: 2.2rem;
+  margin: 0 2rem;
+}
+.nav-links ul{
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+
+}
+.nav-links ul li{
+  list-style: none;
+}
+.nav-links ul li a{
+  display: flex;
+  font-size: 1.3rem;
+  justify-content: space-evenly;
+  color: rgb(255, 255, 255);
+  text-decoration:none ;
+}
+.nav-links ul li::after{
+  content:'';
+  width:0%;
+  height:5px;
+  background:#931d36;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width:100%;
+}
+.scrolled {
+  background-color: #333;
+  color: #fff;
+}
+/*----------- Search-Block  --------------*/
+.Search-Block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:auto ;
+}
+.Search-Block h1{
+  font-size: 2rem;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 25rem;
+  text-shadow: 2px 2px #151515;
+}
+.search-Block-content{
+  display: flex;
+  align-items: center;
+}
+input {
+  width: 20rem;
+  height:3rem ;
+  margin: 0px;
+  border-radius: 10px;
+  font-size:20px;
+}
+.redBtnblock{
+  display: none;
+}
+.in{
+  background: #cecece;
+  border: #040203 2px solid;
+}
+.in::placeholder {
+  color: #931d36;
+  font-size: 1.2em;
+  padding: 10px;
+  font-size: 20px;
+}
+.in:focus  {
+  color:  #000000;
+  font-size: 20px;
+  padding: 5px;
+}
+.lower-Nave-bar{
+  display: none;
+}
+.searchBtn{
+  font-size:20px;
+  padding:2px 30px ;
+  border-radius: 10px;
+  background:#931D36;
+  color: #cecece;
+  cursor: pointer;
+
+}
+/* ---------- Offering ------------*/
+.offering h1{
+  color:#fff;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+/* ------- Btn-Offering --------*/
+.Btn-offering{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide button{
+  margin: .5rem;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color:transparent;
+  border: #931d36 10px solid;
+}
+.swiper-slide img{
+  max-width: 100%; 
+  max-height: 100px; 
+  display: block; 
+  margin: auto; 
+}
+.swiper-slide h1{
+  font-size: 1.5rem; 
+}
+.slideshow-container{
+  display: none;
+}
+/* ------- Btn-Offering-hidden --------*/
+.block{
+  display: flex;
+  color: #cecece;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.about-block-header{
+  margin: 5rem 10rem;
+}
+.about-block-header h1{
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #931D36;
+}
+.line-2{
+  width: 100%;
+  height: 4px;
+  background-color: #cecece;
+}
+/* ------- Btn-Offering-hidden-TEC-One --------*/
+.about-block{
+  display: none;
+}
+.blockTwo{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.blockTwo img{
+  width:350px ;
+ margin: 2rem;
+}
+.Text-Block{
+  width: 40%;
+}
+.Text-Block h2{
+  margin: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.Text-Block p{
+  font-size: 1.3rem;
+  text-align: justify;
+}
+/* ------- Ranking --------*/
+.Ranking-Block{
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.S-banner{
+  margin: 5rem 20rem;
+}
+.S-banner h1{
+  font-size:4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#AC1836 ;
+}
+.line-1{
+  width: 100%;
+  height: 4px;
+  background-color: #cecece;
+}
+a:link {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: #931d36;
+}
+a:active {
+  color: white;
+} 
+.Rank-text{
+  margin:10px ;
+  padding: 50px 0px;
+  font-size:4rem;
+  cursor: pointer;
+}
+/* ------- Mecanico --------*/
+#Meca-block {
+  text-align: center;
+  background-image:url("Images/Img/Landing Page/mecanica.webp");
+  background-size: cover;
+  background-attachment: fixed;  
+}
+/* ------- Pintura --------*/
+#Pintura-block {
+  text-align: center;
+  background-image:url("Images/Img/Landing Page/paint.webp");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;  
+}
+/* ------- Detailer --------*/
+#Detail-block {
+  text-align: center;
+  background-image:url("Images/Img/Landing Page/carwash4.webp");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;  
+}
+/* ------- Electrico --------*/
+#Electrico-block {
+  text-align: center;
+  background-image:url("Images/Img/Landing Page/ely.webp");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;  
+}
+/* ------- Autoboutique --------*/
+#Autoboutique-block {
+  text-align: center;
+  background-image:url("Images/Img/Landing Page/rim.webp");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;  
+}
+/* ------- Detailer --------*/
+#Detailer-block {
+  text-align: center;
+  background-image:url("images/pics/carwash4.webp");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;  
+}
+/* ------- videoAniamation --------*/
+.videoAniamation{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.videoAniamation h1{
+  color: #cecece;
+  font-size: 2rem;
+  text-align: center;
+
+}
+.video{
+  width: 30rem;
+  height: 30rem;
+}
+/* ------- Footer --------*/
+footer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 10rem;
+  margin-top: 4rem;
+  justify-content: center;
+  background-color: #931D36;
+}
+.blackicon{
+  display: none;
+}
+.footer-logo img{
+  width: 30rem;
+}
+.footerTop{
+  gap: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem;
+}
+.mediaIcons i{
+  margin: 0 1rem;
+  color: #cecece;
+  font-size: 2rem;
+}
+.footer-nav-links ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: 2rem;
+  list-style: none;
+}
+.footer-nav-links ul li{
+  margin: 0 2rem;
+  display: flex;
+}
+.footer-nav-links a:link {
+  color: white;
+  text-decoration: none;
+}
+.footer-nav-links a:hover {
+  color: #151515;
+}
+.footer-bottom{
+  display: flex;
+  justify-content:center;
+  padding:1rem 0 ;
+  color: #cecece;
+  font-size: 1.3rem;
+}
+}
+@media(max-width:840px){
+/*----------- nav-Block  --------------*/
+.Nav-Block{
+  display: none;
+}
+.mobile-nav-block{
+  display: flex;
+  justify-content: center;
+}
+.visable-mobile-nav-block{
+  gap: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem;
+}
+.Nav-Block-Logo a img{
+  width: 20rem;
+ }
+.Mobiel-Nav-Header-Btn span{
+  font-size: 2rem;
+  color: #cecece;
+}
+
+
+
+
+
+/*----------- sidenav-Block  --------------*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+  list-style: none;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.Sidenav-icon-Block{
+  display: none;
+  flex-direction: row;
+  gap: 1rem;
+}
+.Sidenav-icon-Block .fa-solid {
+  font-size:1.5rem ;
+  display: flex;
+  align-items: center;
+}
+.switch {
+  margin: 1rem 2rem;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #7C7C7C;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #000000;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .slider {
+  background-color: #5df321;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #325401;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+/*----------- Search-Block  --------------*/
+.Search-Block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:auto ;
+}
+.Search-Block h1{
+  font-size: 2rem;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 25rem;
+  text-shadow: 2px 2px #151515;
+}
+.search-Block-content{
+  display: flex;
+  align-items: center;
+}
+input {
+  width: 20rem;
+  height:3rem ;
+  margin: 0px;
+  border-radius: 10px;
+  font-size:20px;
+}
+.redBtnblock{
+  display: none;
+}
+.in{
+  background: #cecece;
+  border: #040203 2px solid;
+}
+.in::placeholder {
+  color: #931d36;
+  font-size: 1.2em;
+  padding: 10px;
+  font-size: 20px;
+}
+.in:focus  {
+  color:  #000000;
+  font-size: 20px;
+  padding: 5px;
+}
+.lower-Nave-bar{
+  display: none;
+}
+.searchBtn{
+  font-size:20px;
+  padding:2px 30px ;
+  border-radius: 10px;
+  background:#931D36;
+  color: #cecece;
+  cursor: pointer;
+
+}
+/* ---------- Offering ------------*/
+.offering h1{
+  color:#fff;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+/* ------- Btn-Offering --------*/
+.Btn-offering{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide button{
+  margin: .5rem;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color:transparent;
+  border: #931d36 10px solid;
+}
+.swiper-slide img{
+  max-width: 100%; 
+  max-height: 100px; 
+  display: block; 
+  margin: auto; 
+}
+.swiper-slide h1{
+  font-size: 1.5rem; 
+}
+.slideshow-container{
+  display: none;
+}
+/* ------- Btn-Offering-hidden --------*/
+.block{
+  display: flex;
+  color: #cecece;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.about-block-header{
+  margin: 5rem 10rem;
+}
+.about-block-header h1{
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #931D36;
+}
+.line-2{
+  width: 100%;
+  height: 4px;
+  background-color: #cecece;
+}
+/* ------- Btn-Offering-hidden-TEC-One --------*/
+.about-block{
+  display: none;
+}
+.blockTwo{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.blockTwo img{
+  width:350px ;
+ margin: 2rem;
+}
+.Text-Block{
+  width: 40%;
+}
+.Text-Block h2{
+  margin: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.Text-Block p{
+  font-size: 1.3rem;
+  text-align: justify;
+}
+/* ------- Ranking --------*/
+.Ranking-Block{
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.S-banner{
+  margin: 5rem 20rem;
+}
+.S-banner h1{
+  font-size:4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#AC1836 ;
+}
+.line-1{
+  width: 100%;
+  height: 4px;
+  background-color: #cecece;
+}
+a:link {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: #931d36;
+}
+a:active {
+  color: white;
+} 
+.Rank-text{
+  margin:10px ;
+  padding: 50px 0px;
+  font-size:4rem;
+  cursor: pointer;
+}
+/* ------- Mecanico --------*/
+#Meca-block {
+  text-align: center;
+  background-image:url("Images/Img/Landing Page/mecanica.webp");
+  background-size: cover;
+  background-attachment: fixed;  
+}
+/* ------- Pintura --------*/
+#Pintura-block {
+  text-align: center;
+  background-image:url("Images/Img/Landing Page/paint.webp");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;  
+}
+/* ------- Detailer --------*/
+#Detail-block {
+  text-align: center;
+  background-image:url("Images/Img/Landing Page/carwash4.webp");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;  
+}
+/* ------- Electrico --------*/
+#Electrico-block {
+  text-align: center;
+  background-image:url("Images/Img/Landing Page/ely.webp");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;  
+}
+/* ------- Autoboutique --------*/
+#Autoboutique-block {
+  text-align: center;
+  background-image:url("Images/Img/Landing Page/rim.webp");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;  
+}
+/* ------- Detailer --------*/
+#Detailer-block {
+  text-align: center;
+  background-image:url("images/pics/carwash4.webp");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;  
+}
+/* ------- videoAniamation --------*/
+.videoAniamation{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.videoAniamation h1{
+  color: #cecece;
+  font-size: 2rem;
+  text-align: center;
+
+}
+.video{
+  width: 30rem;
+  height: 30rem;
+}
+/* ------- Footer --------*/
+footer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 3rem;
+  margin-top: 4rem;
+  justify-content: center;
+  background-color: #931D36;
+}
+.blackicon{
+  display: none;
+}
+.footer-logo img{
+  width: 20rem;
+}
+.footerTop{
+  gap: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem;
+}
+.mediaIcons i{
+  margin: 0 .5rem;
+  color: #cecece;
+  font-size: 1.5rem;
+}
+.footer-nav-links ul{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin: 2rem;
+  list-style: none;
+}
+.footer-nav-links ul li{
+  margin: 0 2rem;
+  display: flex;
+}
+.footer-nav-links a:link {
+  color: white;
+  text-decoration: none;
+}
+.footer-nav-links a:hover {
+  color: #151515;
+}
+.footer-bottom{
+  display: flex;
+  justify-content:center;
+  padding:1rem 0 ;
+  color: #cecece;
+  font-size: 1rem;
+}
+}
+@media(max-width:520px){
+  /*----------- nav-Block  --------------*/
+  .Nav-Block{
+    display: none;
+  }
+  .mobile-nav-block{
+    display: flex;
+    justify-content: center;
+  }
+  .visable-mobile-nav-block{
+    gap: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem;
+  }
+  .Nav-Block-Logo a img{
+    width: 15rem;
+   }
+  .Mobiel-Nav-Header-Btn span{
+    font-size: 1.5rem;
+    color: #cecece;
+  }
+  
+  
+  
+  
+  
+  /*----------- sidenav-Block  --------------*/
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    list-style: none;
+  }
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .Sidenav-icon-Block{
+    display: none;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .Sidenav-icon-Block .fa-solid {
+    font-size:1.5rem ;
+    display: flex;
+    align-items: center;
+  }
+  .switch {
+    margin: 1rem 2rem;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #7C7C7C;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #000000;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  input:checked + .slider {
+    background-color: #5df321;
+  }
+  input:focus + .slider {
+    box-shadow: 0 0 1px #325401;
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  /*----------- Search-Block  --------------*/
+  .Search-Block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:0 3rem ;
+  }
+  .Search-Block h1{
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 15rem;
+    text-shadow: 2px 2px #151515;
+  }
+  .search-Block-content{
+    display: flex;
+    align-items: center;
+  }
+  input {
+    width: 15rem;
+    height:2rem ;
+    margin: 0px;
+    border-radius: 10px;
+    font-size:20px;
+  }
+  .redBtnblock{
+    display: none;
+  }
+  .in{
+    background: #cecece;
+    border: #040203 2px solid;
+  }
+  .in::placeholder {
+    color: #931d36;
+    font-size: 1rem;
+    padding: 10px;
+  
+  }
+  .in:focus  {
+    color:  #000000;
+    font-size: 20px;
+    padding: 5px;
+  }
+  .lower-Nave-bar{
+    display: none;
+  }
+  .searchBtn{
+    height: 2rem;
+    font-size:15px;
+    padding:-1rem;
+    border-radius: 10px;
+    background:#931D36;
+    color: #cecece;
+    cursor: pointer;
+  
+  }
+  /* ---------- Offering ------------*/
+  .offering h1{
+    color:#fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  /* ------- Btn-Offering --------*/
+  .Btn-offering{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-slide button{
+    margin: .5rem;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color:transparent;
+    border: #931d36 10px solid;
+  }
+  .swiper-slide img{
+    max-width: 100%; 
+    max-height: 100px; 
+    display: block; 
+    margin: auto; 
+  }
+  .swiper-slide h1{
+    font-size: 1.5rem; 
+  }
+  .slideshow-container{
+    display: none;
+  }
+  /* ------- Btn-Offering-hidden --------*/
+  .block{
+    display: flex;
+    color: #cecece;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about-block-header{
+    margin: 5rem;
+  }
+  .about-block-header h1{
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #931D36;
+  }
+  .line-2{
+    width: 100%;
+    height: 4px;
+    background-color: #cecece;
+  }
+  /* ------- Btn-Offering-hidden-TEC-One --------*/
+  .about-block{
+    display: none;
+  }
+  .blockTwo{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .blockTwo img{
+    width:350px ;
+   margin: 2rem;
+  }
+  .Text-Block{
+    width: 80%;
+  }
+  .Text-Block h2{
+    margin: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .Text-Block p{
+    font-size: 1.3rem;
+    text-align: justify;
+  }
+  /* ------- Ranking --------*/
+  .Ranking-Block{
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .S-banner{
+    margin: 5rem 3rem;
+  }
+  .S-banner h1{
+    font-size:1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#AC1836 ;
+  }
+  .line-1{
+    width: 100%;
+    height: 4px;
+    background-color: #cecece;
+  }
+  a:link {
+    color: white;
+    text-decoration: none;
+  }
+  a:visited {
+    color: white;
+  }
+  a:hover {
+    color: #931d36;
+  }
+  a:active {
+    color: white;
+  } 
+  .Rank-text{
+    margin:10px ;
+    padding: 20px 0px;
+    font-size:2rem;
+    cursor: pointer;
+  }
+  /* ------- Mecanico --------*/
+  #Meca-block {
+    text-align: center;
+    background-image:url("Images/Img/Landing Page/mecanica.webp");
+    background-size: cover;
+    background-attachment: fixed;  
+  }
+  /* ------- Pintura --------*/
+  #Pintura-block {
+    text-align: center;
+    background-image:url("Images/Img/Landing Page/paint.webp");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;  
+  }
+  /* ------- Detailer --------*/
+  #Detail-block {
+    text-align: center;
+    background-image:url("Images/Img/Landing Page/carwash4.webp");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;  
+  }
+  /* ------- Electrico --------*/
+  #Electrico-block {
+    text-align: center;
+    background-image:url("Images/Img/Landing Page/ely.webp");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;  
+  }
+  /* ------- Autoboutique --------*/
+  #Autoboutique-block {
+    text-align: center;
+    background-image:url("Images/Img/Landing Page/rim.webp");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;  
+  }
+  /* ------- Detailer --------*/
+  #Detailer-block {
+    text-align: center;
+    background-image:url("images/pics/carwash4.webp");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;  
+  }
+  /* ------- videoAniamation --------*/
+  .videoAniamation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .videoAniamation h1{
+    color: #cecece;
+    font-size: 1.5rem;
+    text-align: center;
+  
+  }
+  .video{
+    width: 20rem;
+    height: 20rem;
+  }
+  /* ------- Footer --------*/
+  footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 3rem;
+    margin-top: 4rem;
+    justify-content: center;
+    background-color: #931D36;
+  }
+  .blackicon{
+    display: none;
+  }
+  .footer-logo img{
+    width: 20rem;
+  }
+  .footerTop{
+    gap: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem;
+  }
+  .mediaIcons i{
+    margin: 0 .5rem;
+    color: #cecece;
+    font-size: 1.5rem;
+  }
+  .footer-nav-links ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 1.3rem;
+    margin: 2rem;
+    list-style: none;
+  }
+  .footer-nav-links ul li{
+    margin: 0 2rem;
+    display: flex;
+  }
+  .footer-nav-links a:link {
+    color: white;
+    text-decoration: none;
+  }
+  .footer-nav-links a:hover {
+    color: #151515;
+  }
+  .footer-bottom{
+    display: flex;
+    justify-content:center;
+    padding:1rem 0 ;
+    color: #cecece;
+    font-size: 1rem;
+  }
+  }

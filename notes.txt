@@ -1,67 +1,57 @@
-
-
-
-
-
-
-
-
-.offering{
-  margin-bottom: 50px;
-}
-.offering-title{
-  text-align: center;
-  color: #fff;
-  font-size: 60px;
-  padding: 20px;
-  font-weight: 600;
-}
-.Btn-offering{
-  display: flex;
-  justify-content: center;
+/*----------- nav-Block  --------------*/
+.Nav-Block{
+  position: fixed;
+  width: 90%;
+  height: 5vh;
+  padding: 3rem;
+  margin-top:-.6rem ;
+  display: none;
   align-items: center;
+
+  justify-content: space-between;
 }
-.block-offering .icons{
+.Nav-Block-Logo a img{
+ width: 3rem;
+}
+.Nav-Block-Login a img{
+  width: 2.2rem;
+  margin: 0 2rem;
+}
+.nav-links ul{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+
 }
-.b-Icon{
-  width: 150px;
-  margin:auto;
+.nav-links ul li{
+  list-style: none;
 }
-.s-Icon{
-  width:50%;
-  margin:20px;
-  padding:10px 10px ;
+.nav-links ul li a{
+  display: flex;
+  font-size: 1.3rem;
+  justify-content: space-evenly;
+  color: rgb(255, 255, 255);
+  text-decoration:none ;
 }
-.block-offering{
-  border: #931d36 10px solid;
-  border-radius: 20px;
-  margin: 80px;
-  padding: 40px;
-  background-color:transparent;
-  cursor: pointer;
+.nav-links ul li::after{
+  content:'';
+  width:0%;
+  height:5px;
+  background:#931d36;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
 }
-.block-offering h1{
+.nav-links ul li:hover::after{
+  width:100%;
+}
+.scrolled {
+  background-color: #333;
   color: #fff;
-  text-align: center;
-  font-size: 48px;
 }
-.slideshow-container{
+.fullLogo{
   display: none;
 }
-/* --------- Offering hiden --------*/
-.line-2 {
-  height: 6px;
-  width: 1600px;
-  background:#cecece;
-  margin:auto;
-}
-.c-bannerIt h1{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color:#AC1836 ;
-  font-size: 110px;
+.iconLogo{
+  display: block;
 }

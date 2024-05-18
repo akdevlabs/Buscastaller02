@@ -23,27 +23,64 @@
 <body>
   <header>
     <section class="Hero-Block">
+        <nav>
+            <div class="Nav-Block" id="nav-Block">
 
-        <div class="Nav-Block" id="nav-Block">
+                <div class="Nav-Block-Logo">
+                    <a href="#"><img   src="Logos/Full-Logo-White-Red-hollow.webp"></a>
+                </div>
 
-            <div class="Nav-Block-Logo">
-                <a href="#"><img  src="Logos/Full-Logo-White-Red-hollow.webp"></a>
-            </div>
+                <section class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="#Ranking">Servicios</a></li>
+                    <li><a href="#offering">Cómo Funciona</a></li>
+                    <li><a href="index2.html">Contáctanos</a></li>
+                </ul>      
+                </section>
 
-            <section class="nav-links" id="navLinks">
-              <ul>
-                <li><a href="#Ranking">Servicios</a></li>
-                <li><a href="#offering">Cómo Funciona</a></li>
-                <li><a href="index2.html">Contáctanos</a></li>
-              </ul>      
-            </section>
-
-            <div class="Nav-Block-Login">
-                <a href="index4.html" target="_blank"><img src="Images\icons\login.webp" width="80px" margin ="auto"></a>
-            </div>
+                <div class="Nav-Block-Login">
+                    <a href="index4.html" target="_blank"><img src="Images\icons\login.webp" width="80px" margin ="auto"></a>
+                </div>
+                
             
+            </div>
+
+            <div class="mobile-nav-block">
+
+                <div class="visable-mobile-nav-block">
+                    <span>.</span>
+                    
+                    <div class="Nav-Block-Logo">
+                        <a href="#"><img   src="Logos/Full-Logo-White-Red-hollow.webp"></a>
+                    </div>
+    
+                    <div class="Mobiel-Nav-Header-Btn">
+                        <span id="openNav" onclick="openNav()">&#9776;</span>
+                    </div>
+
+                </div>
+
+                
         
-        </div>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#Ranking">Servicios</a>
+                    <a href="#offering">Cómo Funciona</a>
+                    <a href="index2.html">Contáctanos</a>
+                   
+
+                   
+        
+                    <div class="Nav-Block-Login">
+                        <a href="index4.html" target="_blank"><img src="Images\icons\login.webp" width="80px" margin ="auto"></a>
+                    </div>
+        
+                </div>
+            </div>
+
+            
+        </nav>
+        
 
         <div class="Search-Block">
             <h1>Encuentra el mejor taller con solo un clic. </h1>
@@ -179,14 +216,14 @@
                   <p>Nuestra función de Clasificación de Maestros Mecánicos te brinda un control completo sobre tus elecciones cuando se trata de encontrar a los mecánicos más hábiles en tu área. Con simplicidad y claridad como prioridad, esta característica te permite identificar y conectarte fácilmente.</p>
 
               </div>
-              <img class="levelImg" id="levelImg" src="Images/Img/Landing Page/Fix.webp" width="600px">
+              <img class="levelImg" src="Images/Img/Landing Page/Fix.webp" width="600px">
                
           </div>
 
           
           <div class="blockTwo" id="blockT" >
               
-              <img class="levelImg" id="levelImgtwo" src="Images/Img/Landing Page/Hack.webp" width="600px"></img>
+              <img class="levelImg" src="Images/Img/Landing Page/Hack.webp" width="600px"></img>
 
               <div class="Text-Block">
 
@@ -208,7 +245,7 @@
 
               </div>
 
-              <img src="Images/Img/Landing Page/Travel.webp" width="600px" ></img>
+              <img class="levelImg" src="Images/Img/Landing Page/Travel.webp" width="600px" ></img>
 
           </div>
 
@@ -404,13 +441,13 @@
    
           <h1>Guía de Usuario para Nuestra Plataforma </h1>
      
-        <div>
-          <video width="1720" height="640" controls>
+   
+          <video class="video" width="1720" height="640" controls>
             <source src="movie.mp4" type="video/mp4">
             <source src="movie.ogg" type="video/ogg">
           Your browser does not support the video tag.
           </video>
-        </div>  
+  
     </section>
     
 
@@ -492,9 +529,17 @@
       }
       }  
 
+  
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  openNav()
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
 
       
-    </script>
+</script>
   <script  src="Buscastaller.js" type="module"></script>
 </html>
 

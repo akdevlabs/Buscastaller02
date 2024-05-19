@@ -1886,7 +1886,7 @@ footer{
     margin: 2rem;
   }
   .Nav-Block-Logo a img{
-    width: 15rem;
+    width: 13rem;
    }
   .Mobiel-Nav-Header-Btn span{
     font-size: 1.5rem;
@@ -2252,7 +2252,7 @@ footer{
     display: none;
   }
   .footer-logo img{
-    width: 20rem;
+    width: 18rem;
   }
   .footerTop{
     gap: 5rem;
@@ -2269,15 +2269,15 @@ footer{
   }
   .footer-nav-links ul{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
-    justify-content: center;
-    font-size: 1.3rem;
+    justify-content: left;
+    font-size: .9rem;
     margin: 2rem;
     list-style: none;
   }
   .footer-nav-links ul li{
-    margin: 0 2rem;
+    margin: 0 .2rem;
     display: flex;
   }
   .footer-nav-links a:link {
@@ -2292,6 +2292,6 @@ footer{
     justify-content:center;
     padding:1rem 0 ;
     color: #cecece;
-    font-size: 1rem;
+    font-size: .6rem;
   }
   }

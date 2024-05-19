@@ -63,7 +63,8 @@
                 
         
                 <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="javascript:void(0)" class="closebtn"
+                     id="closebtn" onclick="closeNav()">&times;</a>
                     <a href="#Ranking">Servicios</a>
                     <a href="#offering">Cómo Funciona</a>
                     <a href="index2.html">Contáctanos</a>
@@ -533,7 +534,7 @@
   function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
   }
-  openNav()
+
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
   }

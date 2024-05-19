@@ -20,14 +20,14 @@
 </head>
 <body>
     <header>
-        <section class="nav-Block" id="nav-Block">
+        <nav>
+          <section class="nav-Block" id="nav-Block">
             <a  href="index.html"><img class="logo"  src="Logos/Full-Logo-White-Red-hollow.webp"></a>
             <a  href="index.html"><img class="logoIcon"  src="Logos/Simple-Icon-Red.webp"></a>
 
             <section class="nav-links" id="navLinks">
              
                     <ul>
-                        <li><a href="index.html">Home</a></li>
                         <li><a href="#Ranking">Servicios</a></li>
                         <li><a href="#offering">Cómo Funciona</a></li>
                         <li><a href="index2.html">Contáctanos</a></li>
@@ -41,6 +41,43 @@
               <img class="login" src="Images/icons/login.webp"  width="80px" >
             </a>
         </section>
+
+          <div class="mobile-nav-block">
+
+              <div class="visable-mobile-nav-block">
+                  <span>.</span>
+                  
+                  <div class="Nav-Block-Logo">
+                      <a href="#"><img   src="Logos/Full-Logo-White-Red-hollow.webp"></a>
+                  </div>
+  
+                  <div class="Mobiel-Nav-Header-Btn">
+                      <span id="openNav" onclick="openNav()">&#9776;</span>
+                  </div>
+
+              </div>
+
+              
+      
+              <div id="mySidenav" class="sidenav">
+                  <a href="javascript:void(0)" class="closebtn"
+                   id="closebtn" onclick="closeNav()">&times;</a>
+                  <a href="#Ranking">Servicios</a>
+                  <a href="#offering">Cómo Funciona</a>
+                  <a href="index2.html">Contáctanos</a>
+                 
+
+                 
+      
+                  <div class="Nav-Block-Login">
+                      <a href="index4.html" target="_blank"><img src="Images\icons\login.webp" width="80px" margin ="auto"></a>
+                  </div>
+      
+              </div>
+          </div>
+
+          
+      </nav>
     </header>        
 
 
@@ -204,22 +241,58 @@
         </div>
         <div class="mediaBlock">
             <a href="https://www.facebook.com/profile.php?id=100086056975804" target="_blank">
-                <img class="iconM" src="Images/icons/face.webp" width="70px">
+                <img class="iconM" src="Images/icons/face.webp" width="50px">
             </a>
             
             <a href="https://www.instagram.com/buscastaller/" target="_blank">
-               <img class="iconM" src="Images/icons/Insta.webp" width="70px" target="_blank"> 
+               <img class="iconM" src="Images/icons/Insta.webp" width="50px" target="_blank"> 
             </a>
             <a href="https://twitter.com/buscastaller" target="_blank">
-               <img class="iconM" src="Images/icons/x.webp" width="70px">
+               <img class="iconM" src="Images/icons/x.webp" width="50px">
             </a>
             <a href="https://www.youtube.com/@buscastaller8872" target="_blank">
-               <img class="iconM" src="Images/icons/youtube.webp" width="70px"> 
+               <img class="iconM" src="Images/icons/youtube.webp" width="50px"> 
             </a>
             
         </div>
     </footer>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("about-block");
+        if (x.style.display === "none") {
+         x.style.display = "block";
+        } else {
+        x.style.display = "none";
+        }
+        }
+      function myFunction2() {
+        var x = document.getElementById("about-block-two");
+        if (x.style.display === "none") {
+         x.style.display = "block";
+        } else {
+        x.style.display = "none";
+        }
+        } 
+      function myFunction3() {
+        var x = document.getElementById("about-block-three");
+        if (x.style.display === "none") {
+         x.style.display = "block";
+        } else {
+        x.style.display = "none";
+        }
+        }  
+  
     
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+  
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  
+        
+  </script>
 
  
     <script src="BTC.js" type="module"></script>   

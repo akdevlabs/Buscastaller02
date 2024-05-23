@@ -51,3 +51,22 @@ body{
 .mobile-nav-block{
   display: none;
 }
+
+
+a:link {
+  color: #cecece;
+
+}
+
+a:visited {
+  color: #cecece;
+
+}
+
+a:hover {
+  color: #cecece;
+}
+
+a:active {
+  color: #cecece;
+}

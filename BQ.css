@@ -372,6 +372,23 @@ footer{
   color: #cecece;
   font-size: 1.3rem;
 }
+a:link {
+  color: #cecece;
+
+}
+
+a:visited {
+  color: #cecece;
+
+}
+
+a:hover {
+  color: #cecece;
+}
+
+a:active {
+  color: #cecece;
+}
 @media(max-width:1930px){
   /*----------- nav-Block  --------------*/
   .logoIcon{

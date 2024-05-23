@@ -150,6 +150,23 @@ footer{
   background-color: #cecece;
   margin: 0 10rem;
 }
+a:link {
+  color: #cecece;
+
+}
+
+a:visited {
+  color: #cecece;
+
+}
+
+a:hover {
+  color: #cecece;
+}
+
+a:active {
+  color: #cecece;
+}
 @media(max-width:1440px){
   /*----------- nav-Block  --------------*/
 nav{

@@ -179,6 +179,23 @@ footer{
 .mediaHeader h1{
   color: #cecece;
 }
+a:link {
+  color: #cecece;
+
+}
+
+a:visited {
+  color: #cecece;
+
+}
+
+a:hover {
+  color: #cecece;
+}
+
+a:active {
+  color: #cecece;
+}
 @media(max-width:1024px){
   .logoIcon{
     display: none;

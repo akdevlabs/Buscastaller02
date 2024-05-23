@@ -1,0 +1,745 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  background-color: #151515;
+}
+/*----------- nav-Block  --------------*/
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 2rem;
+}
+.back-btn a{
+  margin: 1rem;
+  text-decoration: none;
+}
+.back-btn i{
+  font-size: 2rem;
+  border: 2px solid #931D36;
+  padding: .5rem .6rem; 
+  border-radius: 50%;
+}
+.banner h1{
+  color: #cecece;
+  font-size: 4rem;
+}
+/* ------- Executives --------*/
+.executives-Container{
+  display: flex;
+  flex-wrap: wrap; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10rem;
+}
+.porfile {
+  color: #cecece;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+.porfile img{
+  width: 20rem;
+}
+.Etitle{
+  font-size: 1rem;
+}
+.porfile h2{
+  text-align: center;
+  width: 20rem;
+}
+.line{
+  display: flex;
+  justify-content: center;
+  height: 1px;
+  background-color: #cecece;
+  margin: 3rem 10rem;
+
+}
+.pet-executives-title h1{
+  color: #cecece;
+  font-size: 3rem;
+  text-align: center;
+}
+.pet-executives-Container{
+  display: flex;
+  flex-wrap: wrap; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10rem;
+}
+.pet-porfile {
+  color: #cecece;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+.pet-porfile img{
+
+  width: 20rem;
+  height: 20rem;
+  background-size: cover;
+}
+.tall{
+  width: 20rem;
+  height: 30rem;
+  background-size: cover;
+}
+/* ------- Footer --------*/
+footer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 10rem;
+  margin-top: 4rem;
+  justify-content: center;
+  background-color: #931D36;
+}
+.blackicon{
+  display: none;
+}
+.footerTop{
+  gap: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem;
+}
+.mediaIcons i{
+  margin: 0 1rem;
+  color: #cecece;
+  font-size: 2rem;
+}
+.footer-nav-links ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin: 3rem;
+  list-style: none;
+}
+.footer-nav-links ul li{
+  margin: 0 3rem;
+  display: flex;
+}
+.footer-nav-links a:link {
+  color: white;
+  text-decoration: none;
+}
+.footer-nav-links a:hover {
+  color: #151515;
+}
+.footer-bottom{
+  display: flex;
+  justify-content:center;
+  padding:1rem 0 ;
+  color: #cecece;
+  font-size: 1.3rem;
+}
+.line-1{
+  width: 80%;
+  height: 3px;
+  background-color: #cecece;
+  margin: 0 10rem;
+}
+@media(max-width:1440px){
+  /*----------- nav-Block  --------------*/
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.back-btn a{
+  margin: 1rem;
+  text-decoration: none;
+}
+.back-btn i{
+  font-size: 1.5rem;
+  border: 2px solid #931D36;
+  padding: .5rem .6rem; 
+  border-radius: 50%;
+}
+.banner h1{
+  color: #cecece;
+  font-size: 3rem;
+}
+/* ------- Executives --------*/
+.executives-Container{
+  display: flex;
+  flex-wrap: wrap; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10rem;
+}
+.porfile {
+  color: #cecece;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+.porfile img{
+  width: 15rem;
+}
+.Etitle{
+  font-size: 1rem;
+}
+.porfile h1{
+  font-size: 2rem;
+}
+.porfile h2{
+  text-align: center;
+  font-size: 1.5rem;
+  width: 20rem;
+}
+/* ------- Pet-Executives --------*/
+
+.pet-executives-title h1{
+  color: #cecece;
+  font-size: 2rem;
+  text-align: center;
+}
+.pet-executives-title h2{
+  font-size: 1.5rem;
+}
+.pet-executives-Container{
+  display: flex;
+  flex-wrap: wrap; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10rem;
+}
+.pet-porfile {
+  color: #cecece;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+.pet-porfile img{
+  width: 15rem;
+  height: 15rem;
+  background-size: cover;
+}
+/* ------- Footer --------*/
+footer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 10rem;
+  margin-top: 4rem;
+  justify-content: center;
+  background-color: #931D36;
+}
+.blackicon{
+  display: none;
+}
+.footerTop{
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem;
+}
+.mediaIcons i{
+  margin: 0 1rem;
+  color: #cecece;
+  font-size: 2rem;
+}
+.footer-nav-links ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin: 3rem;
+  list-style: none;
+}
+.footer-nav-links ul li{
+  margin: 0 1rem;
+  display: flex;
+}
+.footer-nav-links a:link {
+  color: white;
+  text-decoration: none;
+}
+.footer-nav-links a:hover {
+  color: #151515;
+}
+.footer-bottom{
+  display: flex;
+  justify-content:center;
+  padding:1rem 0 ;
+  color: #cecece;
+  font-size: 1rem;
+}
+.line-1{
+  width: 80%;
+  height: 3px;
+  background-color: #cecece;
+  margin: 0 10rem;
+}
+}
+@media(max-width:1024px){
+  /*----------- nav-Block  --------------*/
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.back-btn a{
+  margin: 1rem;
+  text-decoration: none;
+}
+.back-btn i{
+  font-size: 1.3rem;
+  border: 2px solid #931D36;
+  padding: .5rem .6rem; 
+  border-radius: 50%;
+}
+.banner h1{
+  color: #cecece;
+  font-size: 2.3rem;
+}
+/* ------- Executives --------*/
+.executives-Container{
+  display: flex;
+  flex-wrap: wrap; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5rem;
+}
+.porfile {
+  color: #cecece;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+.porfile img{
+  width: 15rem;
+}
+.Etitle{
+  font-size: 1rem;
+}
+.porfile h1{
+  font-size: 1.5rem;
+}
+.porfile h2{
+  text-align: center;
+  font-size: 1.3rem;
+  width: 20rem;
+}
+/* ------- Pet-Executives --------*/
+
+.pet-executives-title h1{
+  color: #cecece;
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+.pet-porfile h1{
+  font-size: 1.5rem;
+}
+.pet-porfile h2{
+  font-size: 1.3rem;
+}
+.pet-executives-Container{
+  display: flex;
+  flex-wrap: wrap; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10rem;
+}
+.pet-porfile {
+  color: #cecece;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+.pet-porfile img{
+  width: 15rem;
+  height: 15rem;
+  background-size: cover;
+}
+/* ------- Footer --------*/
+footer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 4rem;
+  margin-top: 4rem;
+  justify-content: center;
+  background-color: #931D36;
+}
+.blackicon{
+  display: none;
+}
+.footerTop{
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem;
+}
+.mediaIcons i{
+  margin: 0 1rem;
+  color: #cecece;
+  font-size: 2rem;
+}
+.footer-nav-links ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  margin: 1rem;
+  list-style: none;
+}
+.footer-nav-links ul li{
+  margin: 0 .5rem;
+  display: flex;
+}
+.footer-nav-links a:link {
+  color: white;
+  text-decoration: none;
+}
+.footer-nav-links a:hover {
+  color: #151515;
+}
+.footer-bottom{
+  display: flex;
+  justify-content:center;
+  padding:1rem 0 ;
+  color: #cecece;
+  font-size: 1rem;
+}
+.line-1{
+  display: flex;
+  justify-content: center;
+  height: 1px;
+  background-color: #cecece;
+  margin: 0;
+}
+}
+@media(max-width:768px){
+  /*----------- nav-Block  --------------*/
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.back-btn a{
+  margin: 1rem;
+  text-decoration: none;
+}
+.back-btn i{
+  font-size: 1.3rem;
+  border: 2px solid #931D36;
+  padding: .5rem .6rem; 
+  border-radius: 50%;
+}
+.banner h1{
+  color: #cecece;
+  font-size: 2.3rem;
+}
+/* ------- Executives --------*/
+.executives-Container{
+  display: flex;
+  flex-wrap: wrap; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5rem;
+}
+.porfile {
+  color: #cecece;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+.porfile img{
+  width: 15rem;
+}
+.Etitle{
+  font-size: 1rem;
+}
+.porfile h1{
+  font-size: 1.5rem;
+}
+.porfile h2{
+  text-align: center;
+  font-size: 1.3rem;
+  width: 20rem;
+}
+/* ------- Pet-Executives --------*/
+
+.pet-executives-title h1{
+  color: #cecece;
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+.pet-porfile h1{
+  font-size: 1.5rem;
+}
+.pet-porfile h2{
+  font-size: 1.3rem;
+}
+.pet-executives-Container{
+  display: flex;
+  flex-wrap: wrap; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10rem;
+}
+.pet-porfile {
+  color: #cecece;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+.pet-porfile img{
+  width: 15rem;
+  height: 15rem;
+  background-size: cover;
+}
+/* ------- Footer --------*/
+footer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 4rem;
+  margin-top: 4rem;
+  justify-content: center;
+  background-color: #931D36;
+}
+.blackicon{
+  display: none;
+}
+.footerTop{
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem;
+}
+.footer-logo img{
+  width: 19rem;
+
+}
+.mediaIcons i{
+  margin: 0 1rem;
+  color: #cecece;
+  font-size: 1.5rem;
+}
+.footer-nav-links ul{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 1.1rem;
+  margin: 1rem;
+  list-style: none;
+}
+.footer-nav-links ul li{
+  margin:.5rem;
+  display: flex;
+}
+.footer-nav-links a:link {
+  color: white;
+  text-decoration: none;
+}
+.footer-nav-links a:hover {
+  color: #151515;
+}
+.footer-bottom{
+  display: flex;
+  justify-content:center;
+  padding:1rem 0 ;
+  color: #cecece;
+  font-size: .5rem;
+}
+.line-1{
+  display: flex;
+  justify-content: center;
+  height: 1px;
+  background-color: #cecece;
+  margin: 0;
+}
+}
+@media(max-width:425px){
+  /*----------- nav-Block  --------------*/
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.back-btn a{
+  margin: 1rem;
+  text-decoration: none;
+}
+.back-btn i{
+  font-size: 1.3rem;
+  border: 2px solid #931D36;
+  padding: .5rem .6rem; 
+  border-radius: 50%;
+}
+.banner h1{
+  color: #cecece;
+  font-size: 2.3rem;
+}
+/* ------- Executives --------*/
+.executives-Container{
+  display: flex;
+  flex-wrap: wrap; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5rem;
+}
+.porfile {
+  color: #cecece;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+.porfile img{
+  width: 15rem;
+}
+.Etitle{
+  font-size: 1rem;
+}
+.porfile h1{
+  font-size: 1.5rem;
+}
+.porfile h2{
+  text-align: center;
+  font-size: 1.3rem;
+  width: 20rem;
+}
+/* ------- Pet-Executives --------*/
+
+.pet-executives-title h1{
+  color: #cecece;
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+.pet-porfile h1{
+  font-size: 1.5rem;
+}
+.pet-porfile h2{
+  font-size: 1.3rem;
+}
+.pet-executives-Container{
+  display: flex;
+  flex-wrap: wrap; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10rem;
+}
+.pet-porfile {
+  color: #cecece;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+.pet-porfile img{
+  width: 15rem;
+  height: 15rem;
+  background-size: cover;
+}
+/* ------- Footer --------*/
+footer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 4rem;
+  margin-top: 4rem;
+  justify-content: center;
+  background-color: #931D36;
+}
+.blackicon{
+  display: none;
+}
+.footerTop{
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem;
+}
+.footer-logo img{
+  width: 19rem;
+
+}
+.mediaIcons i{
+  margin: 0 1rem;
+  color: #cecece;
+  font-size: 1.5rem;
+}
+.footer-nav-links ul{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 1.1rem;
+  margin: 1rem;
+  list-style: none;
+}
+.footer-nav-links ul li{
+  margin:.5rem;
+  display: flex;
+}
+.footer-nav-links a:link {
+  color: white;
+  text-decoration: none;
+}
+.footer-nav-links a:hover {
+  color: #151515;
+}
+.footer-bottom{
+  display: flex;
+  justify-content:center;
+  padding:1rem 0 ;
+  color: #cecece;
+  font-size: .5rem;
+}
+.line-1{
+  display: flex;
+  justify-content: center;
+  height: 1px;
+  background-color: #cecece;
+  margin: 0;
+}
+}

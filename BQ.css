@@ -1,18 +1,488 @@
- /*----------- V-icon-block  --------------*/
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  background-color: #151515;
+}
+/*----------- nav-Block  --------------*/
+.logoIcon{
+  display: none;
+}
+.nav-Block a img{
+  width: 20rem;
+}
+.nav-Block{
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  justify-content: space-between;
+}
+.nav-links ul{
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+.nav-links ul li{
+  list-style: none;
+}
+.nav-links ul li a{
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: space-evenly;
+  color: rgb(255, 255, 255);
+  text-decoration:none ;
+}
+.nav-links ul li::after{
+  content:'';
+  width:0%;
+  height:5px;
+  background:#931d36;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width:100%;
+}
+.nav-Block a .login{
+  width: 3rem;
+}
+.mobile-nav-block{
+  display: none;
+}
+/*----------- mission-block  --------------*/
+.Title-block h1{
+  color: #931d36 ;
+  margin: 10rem 0;
+  padding-bottom: 5rem;
+  font-size: 4rem;
+  text-align: center;
+  
+}
+.value-block{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 6rem;
+}
+.left img{
+  width:55rem;
+}
+.right{
+  margin: -10rem 0 0 0;
+}
+#mission-block{
+  width: 70rem;
+  margin-left: -53rem;
+}
+#vision-block{
+  margin-left: -25rem;
+}
+#historia-block{
+  margin-left: 0rem;
+  padding: 3rem 0;
+}
+.value-block-set{
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+}
+.value-block-text{
+  color: #ffffffff;
+}
+.value-block-text p{
+  font-size: 1rem;
+  text-align: justify;
+}
+.value-block-text p{
+  font-size: 1.3rem;
+  text-align: justify;
+
+}
+.mobile-right{
+  display: none;
+}
+/*----------- V-icon-block  --------------*/
+.mobile-icon-block{
+  display: none;
+}
+.V-icon--banner h1{
+ color: #ffffff;
+ font-size: 3rem;
+ text-align: center;
+}
+/*----------- hover-block-btn  --------------*/
+.V-icon-block-carrosel{
+  gap: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.V-icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hover-block-btn img{
+    
+    width:  240px;
+    height: 200px;
+    background-size: cover;
+}
+#quality{
+  width: 22rem;
+}
+.hover-block-btn h1{
+  color: #ffffff;
+  text-align: center;
+}
+/*----------- Hover droopdown --------------*/
+.V-icon-block-text{
+  display: none;
+  color: #000000;
+  position: absolute;
+  z-index: 1;
+  background-color: #cecece;
+}
+#squeres-hidden{
+  width: 30%;
+  margin: 0 0 0 60rem;
+  padding: 3.5rem;
+  font-size: 1.5rem;
+}
+#monta-hidden{
+  width: 30%;
+  margin: 0 0 0 60rem;
+  padding: 3.5rem;
+  font-size: 1.5rem;
+}
+#team-hidden{
+  width: 30%;
+  margin: 0 0 0 60rem;
+  padding: 3.5rem;
+  font-size: 1.5rem;
+}
+#quality-hidden{
+  width: 30%;
+  margin: 0 0 0 -70rem;
+  padding: 3.5rem;
+  font-size: 1.5rem;
+}
+/*----------- Hover droopdown --------------*/
+.líderes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10rem 0;
+}
+.lideres-img-text-block{
+  width: 40rem;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 3rem;
+}
+.lideres-img-text-block a{
+  text-decoration: none;
+  color: #931d36;
+  font-weight: 600;
+  padding: 3rem 0;
+}
+.lideres-img-text-block h1{
+  font-size: 2.5rem;
+}
+.lideres-img-text-block p{
+  text-align: justify;
+  font-size: 1.5rem;
+}
+.líderes-btn-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.líderes-btn-block i{
+  font-size: 2rem;
+}
+.líderes-btn-block span{
+  font-size: 1.5rem;
+  margin: -.1rem 1rem 0 1rem;
+}
+.líderes-image-block img{
+  width: 35rem;
+}
+/*----------- Moral-block --------------*/
+.Principios{
+  margin: 2rem 3rem;
+}
+.Principios-text-block{
+  width: 45%;
+  color: #cecece;
+  margin: 0 ;
+}
+.Principios-text-block h1{
+  color:#931d37;
+  font-size: 2.5rem;
+}
+.Principios-text-block p{
+  font-size: 1.5rem;
+}
+/*----------- Moral-block-dropdown --------------*/
+.principios-drop-img-block{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dropdowns{
+  width: 100%;
+  color: #cecece;
+}
+.dropdown-banner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 1rem;
+}
+.dropdown-banner i{
+  font-size: 1.5rem;
+  border: 2px solid #931d37;
+  padding: .5rem .6rem;
+  border-radius: 100%;
+}
+.dropdown-content{
+  display: none;
+  width: 80%;
+  padding: 1rem;
+  margin: 1.5rem ;
+  font-size: 1.5rem;
+  border: 2px solid #931d36;
+}
+.line-1{
+  width: 90%;
+  height: 4px;
+  background-color: #cecece;
+  margin: 0 .5rem;
+}
+.Principios-image-block img{
+  width: 60rem;
+  border-radius: 2rem;
+}
+/*----------- Know Us block --------------*/
+.Conocernos{
+  margin:10rem 0;
+}
+.Conocernos-banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 3rem 0;
+}
+.Conocernos-banner h1{
+font-size: 3rem;
+ color: #cecece;
+}
+.Conocernos-banner .line-3{
+  width: 50%;
+  height: 4px;
+  background-color: #cecece;
+  margin: auto;
+}
+.Conocernos-container{
+  display: flex;
+align-items: center;
+justify-content: center;
+}
+.block-conocernos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border:2px solid #931d36;
+  padding: 2rem ;
+  
+}
+.block-conocernos-images img{
+  width:  150px;
+  height: 150px;
+  background-size: cover;
+  margin:2rem 0;
+}
+.block-Conocernos-text{
+  width: 20rem;
+  color: #cecece;
+  text-align: center;
+}
+.block-Conocernos-text p{
+  text-align: justify;
+
+}
+#parnter{
+  width: 15rem;
+}
+/* ------- Footer --------*/
+footer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 10rem;
+  margin-top: 4rem;
+  justify-content: center;
+  background-color: #931D36;
+}
+.blackicon{
+  display: none;
+}
+.footerTop{
+  gap: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem;
+}
+.mediaIcons i{
+  margin: 0 1rem;
+  color: #cecece;
+  font-size: 2rem;
+}
+.footer-nav-links ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin: 3rem;
+  list-style: none;
+}
+.footer-nav-links ul li{
+  margin: 0 3rem;
+  display: flex;
+}
+.footer-nav-links a:link {
+  color: white;
+  text-decoration: none;
+}
+.footer-nav-links a:hover {
+  color: #151515;
+}
+.footer-bottom{
+  display: flex;
+  justify-content:center;
+  padding:1rem 0 ;
+  color: #cecece;
+  font-size: 1.3rem;
+}
+@media(max-width:1930px){
+  /*----------- nav-Block  --------------*/
+  .logoIcon{
+    display: none;
+  }
+  .nav-Block a img{
+    width: 20rem;
+  }
+  .nav-Block{
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    justify-content: space-between;
+  }
+  .nav-links ul{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+  }
+  .nav-links ul li{
+    list-style: none;
+  }
+  .nav-links ul li a{
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: space-evenly;
+    color: rgb(255, 255, 255);
+    text-decoration:none ;
+  }
+  .nav-links ul li::after{
+    content:'';
+    width:0%;
+    height:5px;
+    background:#931d36;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .nav-links ul li:hover::after{
+    width:100%;
+  }
+  .nav-Block a .login{
+    width: 3rem;
+  }
+  .mobile-nav-block{
+    display: none;
+  }
+  /*----------- mission-block  --------------*/
+  .Title-block h1{
+    color: #931d36 ;
+    margin: 10rem 0;
+    padding-bottom: 5rem;
+    font-size: 4rem;
+    text-align: center;
+    
+  }
+  .value-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 6rem;
+  }
+  .left img{
+    width:50rem;
+  }
+  .right{
+    margin: -10rem 0 0 0;
+  }
+  #mission-block{
+    width: 70rem;
+    margin-left: -43rem;
+  }
+  #vision-block{
+    margin-left: -27rem;
+  }
+  #historia-block{
+    margin-left: -10rem;
+    padding: 3rem 0;
+  }
+  .value-block-set{
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  .value-block-text{
+    color: #ffffffff;
+  }
+  .value-block-text p{
+    font-size: 1rem;
+    text-align: justify;
+  }
+  .value-block-text p{
+    font-size: 1rem;
+    text-align: justify;
+  
+  }
+  .value-block-img img{
+    width: 15rem;
+  }
+  /*----------- V-icon-block  --------------*/
   .V-icon--banner h1{
    color: #ffffff;
-   font-size: 2rem;
+   font-size: 3rem;
    text-align: center;
   }
   /*----------- hover-block-btn  --------------*/
   .V-icon-block-carrosel{
-    gap: 1rem;
-    width: 30rem;
+    gap: 5rem;
     display: flex;
-    flex-wrap: wrap; 
     align-items: center;
     justify-content: center;
-    margin: auto;
   }
   .V-icon{
     display: flex;
@@ -22,16 +492,15 @@
   }
   .hover-block-btn img{
       
-      width:  180px;
-      height: 120px;
+      width:  240px;
+      height: 200px;
       background-size: cover;
   }
   #quality{
-    width: 16rem;
+    width: 22rem;
   }
   .hover-block-btn h1{
     color: #ffffff;
-    font-size: 1.3rem;
     text-align: center;
   }
   /*----------- Hover droopdown --------------*/
@@ -66,42 +535,212 @@
     padding: 3.5rem;
     font-size: 1.5rem;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media(max-width:1304px){
-  /*----------- nav-Block  --------------*/
-  .logoIcon{
+  /*----------- Hover droopdown --------------*/
+  .líderes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem 0;
+  }
+  .lideres-img-text-block{
+    width: 40rem;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 3rem;
+  }
+  .lideres-img-text-block a{
+    text-decoration: none;
+    color: #931d36;
+    font-weight: 600;
+    padding: 3rem 0;
+  }
+  .lideres-img-text-block h1{
+    font-size: 2.5rem;
+  }
+  .lideres-img-text-block p{
+    text-align: justify;
+    font-size: 1.5rem;
+  }
+  .líderes-btn-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  .líderes-btn-block i{
+    font-size: 2rem;
+  }
+  .líderes-btn-block span{
+    font-size: 1.5rem;
+    margin: -.1rem 1rem 0 1rem;
+  }
+  .líderes-image-block img{
+    width: 35rem;
+  }
+  /*----------- Moral-block --------------*/
+  .Principios{
+    margin: 2rem 3rem;
+  }
+  .Principios-text-block{
+    width: 45%;
+    color: #cecece;
+    margin: 0 ;
+  }
+  .Principios-text-block h1{
+    color:#931d37;
+    font-size: 2.5rem;
+  }
+  .Principios-text-block p{
+    font-size: 1.5rem;
+  }
+  /*----------- Moral-block-dropdown --------------*/
+  .principios-drop-img-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .dropdowns{
+    width: 100%;
+    color: #cecece;
+  }
+  .dropdown-banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 1rem;
+  }
+  .dropdown-banner i{
+    font-size: 1.5rem;
+    border: 2px solid #931d37;
+    padding: .5rem .6rem;
+    border-radius: 100%;
+  }
+  .dropdown-content{
+    display: none;
+    width: 80%;
+    padding: 1rem;
+    margin: 1.5rem ;
+    font-size: 1.5rem;
+    border: 2px solid #931d36;
+  }
+  .line-1{
+    width: 90%;
+    height: 4px;
+    background-color: #cecece;
+    margin: 0 .5rem;
+  }
+  .Principios-image-block img{
+    width: 40rem;
+    border-radius: 2rem;
+  }
+  /*----------- Know Us block --------------*/
+  .Conocernos{
+    margin:10rem 0;
+  }
+  .Conocernos-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 3rem 0;
+  }
+  .Conocernos-banner h1{
+  font-size: 3rem;
+   color: #cecece;
+  }
+  .Conocernos-banner .line-3{
+    width: 50%;
+    height: 4px;
+    background-color: #cecece;
+    margin: auto;
+  }
+  .Conocernos-container{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  .block-conocernos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border:2px solid #931d36;
+    padding: 2rem ;
+    
+  }
+  .block-conocernos-images img{
+    width:  150px;
+    height: 150px;
+    background-size: cover;
+    margin:2rem 0;
+  }
+  .block-Conocernos-text{
+    width: 20rem;
+    color: #cecece;
+    text-align: center;
+  }
+  .block-Conocernos-text p{
+    text-align: justify;
+  
+  }
+  #parnter{
+    width: 15rem;
+  }
+  /* ------- Footer --------*/
+  footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 10rem;
+    margin-top: 4rem;
+    justify-content: center;
+    background-color: #931D36;
+  }
+  .blackicon{
+    display: none;
+  }
+  .footerTop{
+    gap: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem;
+  }
+  .mediaIcons i{
+    margin: 0 1rem;
+    color: #cecece;
+    font-size: 2rem;
+  }
+  .footer-nav-links ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    margin: 3rem;
+    list-style: none;
+  }
+  .footer-nav-links ul li{
+    margin: 0 3rem;
+    display: flex;
+  }
+  .footer-nav-links a:link {
+    color: white;
+    text-decoration: none;
+  }
+  .footer-nav-links a:hover {
+    color: #151515;
+  }
+  .footer-bottom{
+    display: flex;
+    justify-content:center;
+    padding:1rem 0 ;
+    color: #cecece;
+    font-size: 1.3rem;
+  }
+}  
+@media(max-width:1440px){
+   /*----------- nav-Block  --------------*/
+   .logoIcon{
     display: none;
   }
   .nav-Block a img{
@@ -146,127 +785,128 @@
   .mobile-nav-block{
     display: none;
   }
-  /*----------- mission-block  --------------*/
-  .Title-block h1{
-    color: #931d36 ;
-    margin: 1rem  0 0 0;
-    padding-bottom: 5rem;
-    font-size: 4rem;
-    text-align: center;
-    
-  }
-  .value-block{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding-left: 0;
-  }
-  .left img{
-    display: none;
-  }
-  .right{
-    margin: 2rem 0;
-  }
-  #mission-block{
-    
-    margin-left: 0rem;
-  }
-  #vision-block{
-    margin-left: 0rem;
-  }
-  #historia-block{
-    margin-left: 0rem;
-    padding: 0;
-  }
-  .value-block-set{
-    gap: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 2rem 0;
-  }
-  .value-block-text{
-    
-    width: 60%;
-    color: #ffffffff;
-  }
-  .value-block-text p{
-    font-size: 1.2rem;
-    text-align: justify;
-  }
-  .value-block-text h1{
-    font-size: 2rem;
-  }
-  .value-block-img img{
-    width: 16rem;
-  }
+ /*----------- mission-block  --------------*/
+ .Title-block h1{
+  color: #931d36 ;
+  margin: 1rem  0 0 0;
+  padding-bottom: 5rem;
+  font-size: 4rem;
+  text-align: center;
+  
+}
+.value-block{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding-left: 0;
+}
+.left img{
+  display: none;
+}
+.right{
+  margin: 0;
+}
+#mission-block{
+  
+  margin-left: 0rem;
+}
+#vision-block{
+  margin-left: 0rem;
+}
+#historia-block{
+  margin-left: 0rem;
+  padding: 0;
+}
+.value-block-set{
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+}
+.value-block-text{
+  
+  width: 60%;
+  color: #ffffffff;
+}
+.value-block-text p{
+  font-size: 1.2rem;
+  text-align: justify;
+}
+.value-block-text h1{
+  font-size: 2rem;
+}
+.value-block-img img{
+  width: 16rem;
+}
   /*----------- V-icon-block  --------------*/
   .V-icon--banner h1{
    color: #ffffff;
-   font-size: 2.5rem;
+   font-size: 3rem;
    text-align: center;
   }
-  /*----------- hover-block-btn  --------------*/
-  .V-icon-block-carrosel{
-    gap: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .V-icon{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .hover-block-btn img{
-      
-      width:  180px;
-      height: 120px;
-      background-size: cover;
-  }
-  #quality{
-    width: 16rem;
-  }
-  .hover-block-btn h1{
-    color: #ffffff;
-    font-size: 1.3rem;
-    text-align: center;
-  }
-  /*----------- Hover droopdown --------------*/
-  .V-icon-block-text{
-    display: none;
-    color: #000000;
-    position: absolute;
-    z-index: 1;
-    background-color: #cecece;
-  }
-  #squeres-hidden{
-    width: 30%;
-    margin: 0 0 0 60rem;
-    padding: 3.5rem;
-    font-size: 1.5rem;
-  }
-  #monta-hidden{
-    width: 30%;
-    margin: 0 0 0 60rem;
-    padding: 3.5rem;
-    font-size: 1.5rem;
-  }
-  #team-hidden{
-    width: 30%;
-    margin: 0 0 0 60rem;
-    padding: 3.5rem;
-    font-size: 1.5rem;
-  }
-  #quality-hidden{
-    width: 30%;
-    margin: 0 0 0 -70rem;
-    padding: 3.5rem;
-    font-size: 1.5rem;
-  }
-  /*----------- Líderes-Block --------------*/
+/*----------- hover-block-btn  --------------*/
+.V-icon-block-carrosel{
+  gap: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.V-icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hover-block-btn img{
+    
+    width:  180px;
+    height: 120px;
+    background-size: cover;
+}
+#quality{
+  width: 16rem;
+}
+.hover-block-btn h1{
+  color: #ffffff;
+  font-size: 1.3rem;
+  text-align: center;
+}
+/*----------- Hover droopdown --------------*/
+.V-icon-block-text{
+  display: none;
+  color: #000000;
+  position: absolute;
+  z-index: 1;
+  background-color: #cecece;
+}
+#squeres-hidden{
+  width: 30%;
+  margin: 0 0 0 60rem;
+  padding: 3.5rem;
+  font-size: 1.5rem;
+}
+#monta-hidden{
+  width: 30%;
+  margin: 0 0 0 60rem;
+  padding: 3.5rem;
+  font-size: 1.5rem;
+}
+#team-hidden{
+  width: 30%;
+  margin: 0 0 0 60rem;
+  padding: 3.5rem;
+  font-size: 1.5rem;
+}
+#quality-hidden{
+  width: 30%;
+  margin: 0 0 0 -70rem;
+  padding: 3.5rem;
+  font-size: 1.5rem;
+}
+
+/*----------- Líderes-Block --------------*/
   .líderes{
     display: flex;
     align-items: center;
@@ -313,10 +953,9 @@
     margin: 2rem 3rem;
   }
   .Principios-text-block{
-    
     width: 45%;
     color: #cecece;
-    margin: 0 0 1rem 9rem ;
+    margin: 0 ;
   }
   .Principios-text-block h1{
     color:#931d37;
@@ -332,10 +971,7 @@
     justify-content: center;
   }
   .dropdowns{
-    display: flex;
-    flex-direction: column;
-    
-    width: 70%;
+    width: 100%;
     color: #cecece;
   }
   .dropdown-banner{
@@ -344,20 +980,20 @@
     justify-content: space-between;
     margin-right: 1rem;
   }
-  .dropdown-banner h1{
-    width: 100%;
-    font-size: 1.3rem;
-   
-  }
   .dropdown-banner i{
     font-size: 1.5rem;
     border: 2px solid #931d37;
     padding: .5rem .6rem;
     border-radius: 100%;
   }
+  .dropdown-banner h1{
+    font-size: 1.5rem;
+    padding: .5rem .6rem;
+
+  }
   .dropdown-content{
     display: none;
-    width: 60%;
+    width: 80%;
     padding: 1rem;
     margin: 1.5rem ;
     font-size: 1.5rem;
@@ -483,7 +1119,7 @@
     font-size: 1.1rem;
   }
 }
-@media(max-width:1120px){
+@media(max-width:1123px){
   /*----------- nav-Block  --------------*/
   .logoIcon{
     display: none;
@@ -531,6 +1167,14 @@
     display: none;
   }
   /*----------- mission-block  --------------*/
+  .Title-block h1{
+    color: #931d36 ;
+    margin: 2rem 0;
+    padding-bottom: 0rem;
+    font-size: 3rem;
+    text-align: center;
+    
+  }
   .right{
     display: none;
   }
@@ -570,89 +1214,47 @@
     text-align: justify;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-  /*----------- V-icon-block  --------------*/
-  .V-icon--banner h1{
-   color: #ffffff;
-   font-size: 2rem;
-   text-align: center;
+.V-icon-block{
+  display: none;
+}
+.mobile-icon-block{
+  display: block;
+  margin: 10rem 0;
+}
+/*----------- Vmobile-V-icon-block  --------------*/
+  .mobile-V-icon--banner h1{
+      color: #ffffff;
+      text-align: center;
   }
-  /*----------- hover-block-btn  --------------*/
-  .V-icon-block-carrosel{
-    gap: 1rem;
-    width: 30rem;
+  .mobile-V-icon-block-carrosel{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .mobile-V-icon{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+     
+  }
+  .hover-block-btn{
+      margin: 1rem;
+  }
+  #text-hidden{
     display: flex;
-    flex-wrap: wrap; 
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-  }
-  .V-icon{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: relative;
     justify-content: center;
   }
-  .hover-block-btn img{
-      
-      width:  180px;
-      height: 120px;
-      background-size: cover;
-  }
-  #quality{
-    width: 16rem;
-  }
-  .hover-block-btn h1{
-    color: #ffffff;
-    font-size: 1.3rem;
-    text-align: center;
-  }
-  /*----------- Hover droopdown --------------*/
-  .V-icon-block-text{
-    display: none;
-    color: #000000;
-    position: absolute;
-    z-index: 1;
-    background-color: #cecece;
-  }
-  #squeres-hidden{
-    width: 30%;
-    margin: 0 0 0 60rem;
-    padding: 3.5rem;
-    font-size: 1.5rem;
-  }
-  #monta-hidden{
-    width: 30%;
-    margin: 0 0 0 60rem;
-    padding: 3.5rem;
-    font-size: 1.5rem;
-  }
-  #team-hidden{
-    width: 30%;
-    margin: 0 0 0 60rem;
-    padding: 3.5rem;
-    font-size: 1.5rem;
-  }
-  #quality-hidden{
-    width: 30%;
-    margin: 0 0 0 -70rem;
-    padding: 3.5rem;
-    font-size: 1.5rem;
+  #text-hidden p{
+   width: 20rem;
+   padding: 1rem;
   }
   /*----------- Líderes-Block --------------*/
   .líderes{
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     margin: 10rem 0;
@@ -690,7 +1292,8 @@
     margin: -.1rem 1rem 0 1rem;
   }
   .líderes-image-block img{
-    display: none;
+    display: flex;
+    width: 18rem;
   }
   /*----------- Moral-block --------------*/
   .Principios{
@@ -826,7 +1429,7 @@
     display: none;
   }
   .footerTop{
-    gap: 10rem;
+    gap: 3rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -868,433 +1471,8 @@
     font-size: 1.1rem;
   }
 }
-@media(max-width:768px){
-main{
-  max-width: 768px;
-}
-/*----------- nav-Block  --------------*/
-#nav-Block{
-  display: none;
-}
-.mobile-nav-block{
-  display: flex;
-  justify-content: center;
-}
-.visable-mobile-nav-block{
-  gap: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 2rem;
-}
-.Nav-Block-Logo a img{
-  width: 25rem;
- }
-.Mobiel-Nav-Header-Btn span{
-  font-size: 1.8rem;
-  color: #cecece;
-}
-/*----------- sidenav-Block  --------------*/
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #ffffff;
-  display: block;
-  transition: 0.3s;
-  list-style: none;
-}
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-.Sidenav-icon-Block{
-  display: none;
-  flex-direction: row;
-  gap: 1rem;
-}
-.Sidenav-icon-Block .fa-solid {
-  font-size:1.5rem ;
-  display: flex;
-  align-items: center;
-}
-.switch {
-  margin: 1rem 2rem;
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-.switch input { 
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #7C7C7C;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: #000000;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-input:checked + .slider {
-  background-color: #5df321;
-}
-input:focus + .slider {
-  box-shadow: 0 0 1px #325401;
-}
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-.slider.round:before {
-  border-radius: 50%;
-}
-/*----------- Title-block  --------------*/
-.Title-block h1{
-  font-size: 2.5rem;
-}
-/*----------- mission-block  --------------*/
-.right{
-    display: none;
-}
-.mobile-right{
-    display: flex;
-    flex-direction: column;
-    margin: 0 1rem;
-}
-#mobile-value-block{
-    display: flex;
-    flex-direction: column;
-    background-color:2px solid #931d36;
-}
-.mobile-value-block-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #cecece;
-    margin: 2rem 0;
-   
-}
-.mobile-value-block-img{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.mobile-value-block-img img{
-    width: 20rem;
-}
-.mobile-value-block-text h1{
 
-    text-align: center;
-}
-.mobile-value-block-text p{
-    width: 30rem;
-    font-size: 1.5rem;
-    text-align: justify;
-}
-/*----------- V-icon-block  --------------*/
-.V-icon-block{
-    display: none;
-}
-/*----------- Vmobile-V-icon-block  --------------*/
-.mobile-V-icon--banner h1{
-    color: #ffffff;
-    text-align: center;
-}
-.mobile-V-icon-block-carrosel{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.mobile-V-icon{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   
-}
-.hover-block-btn{
-    margin: 1rem;
-}
-#text-hidden{
-  display: flex;
-  position: relative;
-  justify-content: center;
-}
-#text-hidden p{
- width: 20rem;
- padding: 1rem;
-}
-/*----------- Líderes-Block --------------*/
-  .líderes{
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    margin: 10rem 0;
-  }
-  .lideres-img-text-block{
-    width: 30rem;
-    color: #ffffff;
-    text-align: center;
-    margin: 0 3rem;
-  }
-  .lideres-img-text-block a{
-    text-decoration: none;
-    color: #931d36;
-    font-weight: 600;
-    padding: 3rem 0;
-  }
-  .lideres-img-text-block h1{
-    font-size: 1.6rem;
-  }
-  .lideres-img-text-block p{
-    text-align: justify;
-    font-size: 1.1rem;
-  }
-  .líderes-btn-block {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-  }
-  .líderes-btn-block i{
-    font-size: 2rem;
-  }
-  .líderes-btn-block span{
-    font-size: 1.5rem;
-    margin: -.1rem 1rem 0 1rem;
-  }
-  .líderes-image-block img{
-    width: 18rem;
-    display: flex;
-  }
-  /*----------- Moral-block --------------*/
-  .Principios{
-    margin: 2rem 3rem;
-  }
-  .Principios-text-block{
-    
-    width: 45%;
-    color: #cecece;
-    margin: 0 0 1rem 9rem ;
-  }
-  .Principios-text-block h1{
-    color:#931d37;
-    font-size: 2rem;
-  }
-  .Principios-text-block p{
-    font-size: 1.3rem;
-  }
-  /*----------- Moral-block-dropdown --------------*/
-  .principios-drop-img-block{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .dropdowns{
-    display: flex;
-    flex-direction: column;
-    
-    width: 70%;
-    color: #cecece;
-  }
-  .dropdown-banner{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 1rem;
-  }
-  .dropdown-banner h1{
-    width: 100%;
-    font-size: 1.3rem;
-   
-  }
-  .dropdown-banner i{
-    font-size: 1.5rem;
-    border: 2px solid #931d37;
-    padding: .5rem .6rem;
-    border-radius: 100%;
-  }
-  .dropdown-content{
-    display: none;
-    width: 60%;
-    padding: 1rem;
-    margin: 1.5rem ;
-    font-size: 1.5rem;
-    border: 2px solid #931d36;
-  }
-  .line-1{
-    width: 90%;
-    height: 4px;
-    background-color: #cecece;
-    margin: 0 .5rem;
-  }
-  .Principios-image-block img{
-    display: none;
-  }
-  /*----------- Know Us block --------------*/
-  .Conocernos{
-    margin:10rem 0;
-  }
-  .Conocernos-banner{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin: 2rem 0;
-  }
-  .Conocernos-banner h1{
-  font-size: 2rem;
-   color: #cecece;
-  }
-  .Conocernos-banner .line-3{
-    width: 50%;
-    height: 4px;
-    background-color: #cecece;
-    margin: auto;
-  }
-  .Conocernos-container{
-    display: flex;
-    flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  }
-  .block-conocernos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border:2px solid #931d36;
-    padding: 1rem ;
-    
-  }
-  .block-conocernos-images img{
-    width:  100px;
-    height: 100px;
-    background-size: cover;
-    margin:2rem 0;
-  }
-  .block-Conocernos-text{
-    width: 15rem;
-    color: #cecece;
-    text-align: center;
-  }
-  .block-Conocernos-text h1{
-    font-size: 1.5rem;
-  }
-  .block-Conocernos-text p{
-    text-align: justify;
-  }
-  #parnter{
-    width: 10rem;
-  }
-  /* ------- Footer --------*/
-  footer{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 3rem 10rem;
-    margin-top: 4rem;
-    justify-content: center;
-    background-color: #931D36;
-  }
-  .blackicon{
-    display: none;
-  }
-  .footerTop{
-    gap: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 2rem;
-  }
-  .footer-logo img{
-    width: 20rem;
-  }
-  .mediaIcons i{
-    margin: 0 1rem;
-    color: #cecece;
-    font-size: 1.5rem;
-  }
-  .footer-nav-links ul{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    margin: 1rem;
-    list-style: none;
-  }
-  .footer-nav-links ul li{
-    margin: 0 3rem;
-    display: flex;
-  }
-  .footer-nav-links a:link {
-    color: white;
-    text-decoration: none;
-  }
-  .footer-nav-links a:hover {
-    color: #151515;
-  }
-  .footer-bottom{
-    display: flex;
-    justify-content:center;
-    padding:1rem 0 ;
-    color: #cecece;
-    font-size: .7rem;
-  }
-}
-}
-
-
-@media(max-width:425px){
+@media(max-width:644px){
   main{
     max-width: 768px;
   }
@@ -1496,47 +1674,50 @@ input:checked + .slider:before {
    padding: 1rem;
   }
   /*----------- Líderes-Block --------------*/
-    .líderes{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 10rem 0;
-    }
-    .lideres-img-text-block{
-      width: 30rem;
-      color: #ffffff;
-      text-align: center;
-      margin: 0 3rem;
-    }
-    .lideres-img-text-block a{
-      text-decoration: none;
-      color: #931d36;
-      font-weight: 600;
-      padding: 3rem 0;
-    }
-    .lideres-img-text-block h1{
-      font-size: 1.6rem;
-    }
-    .lideres-img-text-block p{
-      text-align: justify;
-      font-size: 1.1rem;
-    }
-    .líderes-btn-block {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-    }
-    .líderes-btn-block i{
-      font-size: 2rem;
-    }
-    .líderes-btn-block span{
-      font-size: 1.5rem;
-      margin: -.1rem 1rem 0 1rem;
-    }
-    .líderes-image-block img{
-      display: none;
-    }
+  .líderes{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem 0;
+  }
+  .lideres-img-text-block{
+    width: 30rem;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 3rem;
+  }
+  .lideres-img-text-block a{
+    text-decoration: none;
+    color: #931d36;
+    font-weight: 600;
+    padding: 3rem 0;
+  }
+  .lideres-img-text-block h1{
+    font-size: 2rem;
+  }
+  .lideres-img-text-block p{
+    margin: 1rem 3rem;
+    text-align: justify;
+    font-size: 1.3rem;
+  }
+  .líderes-btn-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  .líderes-btn-block i{
+    font-size: 2rem;
+  }
+  .líderes-btn-block span{
+    font-size: 1.5rem;
+    margin: -.1rem 1rem 0 1rem;
+  }
+  .líderes-image-block img{
+    display: flex;
+    width: 18rem;
+  }
     /*----------- Moral-block --------------*/
     .Principios{
       margin: 2rem 3rem;
@@ -1662,7 +1843,7 @@ input:checked + .slider:before {
       display: flex;
       align-items: center;
       flex-direction: column;
-      padding: 3rem 10rem;
+      padding: 3rem 3rem;
       margin-top: 4rem;
       justify-content: center;
       background-color: #931D36;
@@ -1695,7 +1876,7 @@ input:checked + .slider:before {
       list-style: none;
     }
     .footer-nav-links ul li{
-      margin: 0 3rem;
+      margin: 0 1rem;
       display: flex;
     }
     .footer-nav-links a:link {

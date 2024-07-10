@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4a32509195.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BuscasTaller/Ranking/Mecanica/Perfile</title>
+    <link rel="stylesheet" href="BRMP.css">
+    <meta name="viewport" content="width=device-width, intial-scale=1, shrinck-to-fit=no">
+    <link rel="shortcut icon" href="Images\Logos/Simple-Icon-Red.webp">
+    <style type="text/css"></style>
+
+</head>
+<body>
+    <header>
+        <nav>
+          <section class="nav-Block" id="nav-Block">
+
+            <section class="logo-Block">
+              <img src=Images\Logos\Full-Logo-White-Red-hollow.webp>
+            </section>  
+
+            <section class="nav-links" id="navLinks">
+             
+                <ul>
+                    <li>
+                      <a href="index.html">
+                        <i class="fa-solid fa-house" style="color: #931d37;"></i>
+                        <span>Home</span>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-hammer" style="color: #931d37;"></i>
+                        <span>Escribir una reseña</span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a id="VideoBtn" href="#">
+                        <i class="fa-solid fa-list-check" style="color: #931d36;"></i>
+                        <span>Cómo funciona</span>  
+                      </a>
+                    </li>
+                </ul>  
+                    
+                    
+            </section>
+
+            <section class="login-Block">
+              <a href="#" target="_blank" class="log">Log In</a>
+            </section>
+
+            <section class="SignIn-Block">
+              <a href="#" target="_blank" class="Sign">Sign In</a>
+            </section>
+           
+          </section>
+
+          <div class="mobile-nav-block">
+
+              <div class="visable-mobile-nav-block">
+                  <span>.</span>
+                  
+                  <div class="Nav-Block-Logo">
+                    <img src=Images\Logos\Simple-Icon-Red.webp>
+                  </div>
+  
+                  <div class="Mobiel-Nav-Header-Btn">
+                      <span id="openNav" onclick="openNav()">&#9776;</span>
+                  </div>
+
+              </div>
+
+              
+      
+              <div id="mySidenav" class="sidenav">
+                  <a href="javascript:void(0)" class="closebtn"
+                   id="closebtn" onclick="closeNav()">&times;</a>
+                  <a href="#Ranking">Servicios</a>
+                  <a href="#offering">Cómo Funciona</a>
+                  <a href="index2.html">Contáctanos</a>
+                 
+
+                 
+      
+                  <div class="Nav-Block-Login">
+                      <a href="index4.html" target="_blank"><img src="Images\icons\login.webp" width="80px" margin ="auto"></a>
+                  </div>
+      
+              </div>
+          </div>
+
+          <div class="line"></div>
+
+        </nav>
+    </header> 
+
+    <main>
+
+      <section class="carouselBlock" id="carouselBlock">
+        <i id="closeCb" class="fa-solid fa-x" style="color: #931d37;"></i>
+        <div class="container">
+          <i id="prev" class="fa-solid fa-caret-left" style="color: #931d36;"></i>
+          <img id="carousel" src="" alt="carousel image">
+          <i id="next" class="fa-solid fa-caret-right" style="color: #931d36;"></i>
+        </div>
+      </section>
+
+      <section class="top-banner-block" id="miElemento">
+        <div class="top-banner-content">
+          
+          <div class="top-banner-content-left">
+              <div class="shop-logo" id="shop-logo"></div>
+              <h1 class="shop-name" id="shop-name"></h1>
+              
+              <div class="star-block">
+                <div class="stars" id="stars">
+                  <i id="Star1" class="fa-solid fa-star" style="color: #931d3600;"></i>
+                  <i id="Star2" class="fa-solid fa-star" style="color: #931d3600;"></i>
+                  <i id="Star3" class="fa-solid fa-star" style="color: #931d3600;"></i>
+                  <i id="Star4" class="fa-solid fa-star" style="color: #931d3600;"></i>
+                  <i id="Star5" class="fa-solid fa-star" style="color: #931d3600;"></i>
+                </div>
+                <div id="avarge-stars"></div>
+                <div id="amount-reviews"></div>
+              </div>
+
+              <div class="shop-info-block">
+                <span id="vetted">Verificado</span>
+                <div class="vetted-icon" id="vetted-icon"></div>
+                <span>Mecanico</span>
+              </div>
+
+              <div class="time-block">
+                <span id="status"></span>
+          
+                <a href="#HB" id="ShBtn">See hours</a>
+              </div>
+
+          </div>
+
+          <div class="top-banner-content-right">
+            <span class="CarasoleBtn" id="CarasoleBtn">See all <span id="picAmo"></span> photos</span>
+          </div>
+
+
+
+
+        </div>
+      </section>
+
+     <section class="detail-block">
+
+          <section class="detail-block-left">
+            <div class="action-btn-block">
+
+              <div class="btn-block" id="review-btn">
+                <a id="moveReview" href="#leave-review-block"></a>
+                <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                  <lord-icon
+                      id="reviewIcon"
+                      src="https://cdn.lordicon.com/lyrrgrsl.json"
+                      trigger="hover"
+                      colors="primary:#ffffff">
+                  </lord-icon>
+                  </a>
+                  <span id="review-btn-text">Escribir una reseña</span>
+              </div>
+      
+              <div class="btn-block" id="subscribe-btn">
+                <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                  <lord-icon
+                      id="bellIcon"
+                      src="https://cdn.lordicon.com/vspbqszr.json"
+                      trigger="hover"
+                      colors="primary:#ffffff"
+                    >
+                  </lord-icon>
+                  <span id="subscribe-btn-text">Suscribirse</span>
+              </div>
+      
+              <div class="btn-block" id="upload-btn">
+                <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                <lord-icon  id="uploadIcon" src="https://cdn.lordicon.com/smwmetfi.json"
+                    trigger="hover"
+                    colors="primary:#ffffff"
+                   >
+
+                   
+                </lord-icon>
+                 <span id="upload-btn-text">Agregar fotos</span>
+              </div>
+      
+              <div class="btn-block" id="share-btn">
+                <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                  <lord-icon
+                      id="shareIcon"
+                      src="https://cdn.lordicon.com/ercyvufy.json"
+                      trigger="hover"
+                      colors="primary:#ffffff">
+                  </lord-icon>
+                 <span id="share-btn-text">Compartir</span>
+              </div>
+      
+              <div class="btn-block" id="save-btn">
+                <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                 <lord-icon
+                      id="saveIcon"
+                      src="https://cdn.lordicon.com/prjooket.json"
+                      trigger="hover"
+                      colors="primary:#ffffff">
+                 </lord-icon>
+                 <span id="save-btn-text">Guardar</span>
+              </div>
+
+              <div class="btn-block" id="price-btn">
+                <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                  <lord-icon
+                      id="priceIcon"
+                      src="https://cdn.lordicon.com/gfgzffjw.json"
+                      trigger="hover"
+                      colors="primary:#ffffff">
+                  </lord-icon>
+                 <span id="price-btn-text">Precio</span>
+              </div>
+
+              <div class="btn-block" id="Promociones-btn">
+                <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                  <lord-icon
+                      id="promocionesIcon"
+                      src="https://cdn.lordicon.com/whrxobsb.json"
+                      trigger="hover"
+                      colors="primary:#ffffff">
+                  </lord-icon>
+                 <span id="Promociones-btn-text">Promociones</span>
+              </div>
+      
+            </div>
+
+            <div class="hidden-alert-block">
+                <div class="Sub-banner-block" id="sub-banner-block"></div>
+                <div class="Save-banner-block" id="Save-banner-block"></div>
+
+                <div class="line2"></div>
+
+                <div class="upload-banner-block" id="upload-banner-block">
+                  <i id="closeUbb" class="fa-solid fa-x" style="color: #931d37;"></i>
+                  <i class="fa-solid fa-cloud-arrow-up" style="color: #931d36;"></i>
+                  <h1>Sube las fotos que te gusten para compartir</h1>
+                  <form class="form-upload-banner-block"   method="POST" action="https://formsubmit.co/ash@buscastaller.com" enctype="multipart/form-data">
+                  
+                    <input type="file" name="attachment" accept="image/png, image/jpeg">
+                    <input type="hidden" name="_subject" value="Para Talleres: Ayuda">
+                    <input type="hidden" name="_next" value="https://www.buscastaller.com/thanks.html">
+                    <button type="submit">Subir</button>
+                  </form>
+                </div>
+
+                <div class="share-banner-block" id="share-banner-block">
+                  <div class="share-banner-container">
+
+                      <a href="https://api.whatsapp.com/send/?phone=%2B523343957328&text&type=phone_number&app_absent=0" class="social-btn" id="whatsapp-btn"  target="_blank">
+                        <i class="fa-brands fa-whatsapp" style="color: #25d366;"></i>
+                        <h1>Whatsapp</h1>
+                      </a>
+
+                      <a href="https://www.facebook.com/profile.php?id=100086056975804" class="social-btn" id="facebook-btn"  target="_blank">
+                        <i class="fa-brands fa-facebook" style="color: #3b5998;"></i>
+                        <h1>Facebook</h1>
+                      </a>
+
+                      <a href="https://twitter.com/buscastaller"  class="social-btn" id="twitter-btn">
+                        <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                        <h1>Twitter</h1>
+                      </a>
+
+                      <a href="
+                      #" class="social-btn" id="emailButton" target="_blank">
+                        <i class="fa-regular fa-envelope" style="color: #ffffff;"></i>
+                        <h1>Email</h1>
+                      </a>
+
+                  </div>
+
+                  <div class="search-bar-banner-block" id="copyContainer"></div>
+                  
+
+                </div>
+
+                <div class="priceList" id="priceList">
+                  <div class="pLbanner">
+                    <h1>Lista de precios y servicios</h1>                    
+                    <i id="closepL" class="fa-solid fa-x" style="color: #ffffff;"></i>
+                  </div>
+                  
+                  <div class="priceListblock" id="priceListblock">
+                    <iframe id="priceFrame" src="" width="800px" height="400px" frameBorder="0" scrolling="no" arginheight="0"></iframe>
+                  </div>
+                </div>
+
+                <div class="promoList" id="promoList">
+                  <div class="prLbanner">
+                      <h1>Lista de Promociones y Descuentos</h1>
+                      <i id="closeprL" class="fa-solid fa-x" style="color: #ffffff;"></i>
+                  </div>
+                  <div class="promoListblock" id="promoListblock">
+                    <iframe id="PromoFrame" src="" width="800px" height="400px"></iframe>
+                  </div>
+                </div>
+            </div>
+                        
+            <div class="wcmt-block">
+
+              <div class="wcmt-block-top">
+
+                <div class="website-block" >
+                  <h1 id="web-Link-lable"></h1>
+                  <h2 id="web-link"></h2>
+                </div>
+
+                <div class="credit-card-block">
+                  <h1 id="credit-cards-lable">Tarjetas de crédito aceptadas</h1>
+                  <div id="credit-cards">
+                  <i id="visa" class="fa-brands fa-cc-visa" ></i>
+                  <i id="mastercard" class="fa-brands fa-cc-mastercard" ></i>
+                  <i id="amex" class="fa-brands fa-cc-amex" ></i>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="wcmt-block-bottom">
+                <div class="map-block">
+                  <h1 class="map-block-lable">Ubicación y Horarios</h1>
+                  <div class="map">
+                    <iframe id="myIframe" src="https://www.example.com" width="600" height="400"></iframe>
+                  </div>
+                  <div class="map-block-links">
+                    <span id="map-block-address"></span>
+                    <a class="map-link-btn" id="map-link-btn" href=" " >Obtener direcciones</a>
+                  </div>
+                </div>
+
+                <div class="horario-Block" id="HB">
+
+                    <div class="day">
+                        <span id="monday"     ></span>
+                        <div class="tume">
+                          <span id="mondayStart"></span>
+                          <span id="mondayEnd"  ></span>
+                        </div>
+                        
+                    </div>
+
+                    <div class="day">
+                        <span id="tuesday"     ></span>
+                        <div class="tume">
+                          <span id="tuesdayStart"></span>
+                          <span id="tuesdayEnd"  ></span>
+                        </div>
+                        
+                    </div>
+
+                    <div class="day">
+                        <span id="wensday"     ></span>
+                        <div class="tume">
+                          <span id="wensdayStart"></span>
+                          <span id="wensdayEnd"  ></span>
+                        </div>
+                        
+                    </div> 
+
+                    <div class="day">
+                        <span id="thursday"     ></span>
+                        <div class="tume">
+                          <span id="thursdayStart"></span>
+                          <span id="thursdayEnd"  ></span>
+                        </div>
+                        
+                    </div>
+
+                    <div class="day">
+                        <span id="friday"     ></span>
+                        <div class="tume">
+                          <span id="fridayStart"></span>
+                          <span id="fridayEnd"  ></span>
+                        </div>
+                        
+                    </div> 
+
+                    <div class="day">
+                        <span id="saturday"     ></span>
+                        <div class="tume">
+                          <span id="saturdayStart"></span>
+                          <span id="saturdayEnd"  ></span>
+                        </div>
+                        
+                    </div>
+
+                    <div class="day">
+                        <span id="sunday"     ></span>
+                        <div class="tume">
+                          <span id="sundayStart"></span>
+                          <span id="sundayEnd"  ></span>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="line2"></div>
+            
+            <div class="star-graf-block">
+
+              <div class="star-graf-block-left">
+                <h1>Calificación General</h1>
+                <div class="sg-block">
+                  <div class="stars-graf" id="stars-amount">
+                  <i id="Star-Graf-1" class="fa-solid fa-star" style="color: #931d3600;"></i>
+                  <i id="Star-Graf-2" class="fa-solid fa-star" style="color: #931d3600;"></i>
+                  <i id="Star-Graf-3" class="fa-solid fa-star" style="color: #931d3600;"></i>
+                  <i id="Star-Graf-4" class="fa-solid fa-star" style="color: #931d3600;"></i>
+                  <i id="Star-Graf-5" class="fa-solid fa-star" style="color: #931d3600;"></i>
+                </div>
+                <span id="graf-reviws"></span>
+                </div>
+                
+              </div>
+              
+              <div class="star-graf-block-right">
+
+                    <div class="progressBlock">
+                      <label for="five-bar">5 stars </label>
+                      <progress class="bar" id="five-bar" value="" max="100"></progress>
+                    </div>
+                    
+                    <div class="progressBlock">
+                      <label for="four-bar">4 stars </label>
+                      <progress class="bar" id="four-bar" value="" max="100"></progress>
+                    </div>
+                    
+                    <div class="progressBlock">
+                      <label for="three-bar">3 stars </label>
+                      <progress class="bar" id="three-bar" value="" max="100"></progress>
+                    </div>
+                    
+                    <div class="progressBlock">
+                      <label for="two-bar">2 stars </label>
+                      <progress class="bar" id="two-bar" value="" max="100"></progress>
+                    </div>
+                    
+                    <div class="progressBlock">
+                      <label for="one-bar">1 stars </label>
+                      <progress class="bar" id="one-bar" value="" max="100"></progress>
+                    </div>
+                    
+                  
+          
+
+              </div>
+            </div>
+
+            <div class="line2"></div>
+
+            <ul id="objectList"></ul>
+
+           
+
+          <form class="leave-review-block" id="review-form">
+            <i id="leave-review-block-close" class="fa-solid fa-xmark" style="color: #931D36;"></i>
+            <span id="rating"></span>
+            <div class="sI-block">
+              <h1>Por favor, deja tu reseña aquí:</h1>
+                <div class="stars-input" id="stars-input">
+                    <i id="Star-input-1" class="fa fa-star" style="color: #ffffff;"></i>
+                    <i id="Star-input-2" class="fa fa-star" style="color: #ffffff;"></i>
+                    <i id="Star-input-3" class="fa fa-star" style="color: #ffffff;"></i>
+                    <i id="Star-input-4" class="fa fa-star" style="color: #ffffff;"></i>
+                    <i id="Star-input-5" class="fa fa-star" style="color: #ffffff;"></i>
+                </div>
+                <input type="hidden" id="rating-input" name="rating" value="0" />
+                <textarea id="review" name="review" placeholder="Escribe aquí"></textarea>
+                <button type="submit" id="submit">Enviar</button>
+            </div>
+          </form>
+          
+
+
+
+            <div class="line2" id="hidden-line"></div>
+
+          <div class="review-posted-block">
+            <div class="slot" id="slot1">
+              <div class="slot-top">
+                  <div class="slot-top-left">
+                      <img id="Img1" src="Images\Img\girl.webp">
+                  </div>
+                  <div class="slot-top-right">
+                    <h1 id="Name1">user one</h1>
+                    <span id="Level1">Clasic</span>
+                  </div>
+              </div>
+              <div class="slot-center">
+                  <div class="slot-center-left">
+                      <i id="Star-review-1" class="fa-solid fa-star" style="color: #ffffff00;"></i>
+                      <i id="Star-review-2" class="fa-solid fa-star" style="color: #ffffff00;"></i>
+                      <i id="Star-review-3" class="fa-solid fa-star" style="color: #ffffff00;"></i>
+                      <i id="Star-review-4" class="fa-solid fa-star" style="color: #ffffff00;"></i>
+                      <i id="Star-review-5" class="fa-solid fa-star" style="color: #ffffff00;"></i>
+                  </div>
+                  <div class="slot-center-right">
+                    <span id="timeStamp1">8-7-2024</span>
+                  </div>
+              </div>
+              <div class="slot-bottom">
+                <p id="text1">Buen servico... persona confiablelo recomiendo ampliamente</p>
+
+              </div>
+            </div>
+
+            <div class="line2"></div>
+
+            <div class="slot" id="slot2">
+              <div class="slot-top">
+                  <div class="slot-top-left">
+                      <img id="Img2" src="Images\Img\girl.webp">
+                  </div>
+                  <div class="slot-top-right">
+                    <h1 id="Name2">user one</h1>
+                    <span id="Level2">Clasic</span>
+                  </div>
+              </div>
+              <div class="slot-center">
+                  <div class="slot-center-left">
+                    <i id="Star-input-1-2" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    <i id="Star-input-2-2" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    <i id="Star-input-3-2" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    <i id="Star-input-4-2" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    <i id="Star-input-5-2" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                  </div>
+                  <div class="slot-center-right">
+                    <span id="timeStamp2">8-7-2024</span>
+                  </div>
+              </div>
+              <div class="slot-bottom">
+                <p id="text2">Buen servico... persona confiablelo recomiendo ampliamente</p>
+
+              </div>
+            </div>
+
+            <div class="line2"></div>
+
+            <div class="slot" id="slot3">
+              <div class="slot-top">
+                  <div class="slot-top-left">
+                      <img id="Img3" src="Images\Img\girl.webp">
+                  </div>
+                  <div class="slot-top-right">
+                    <h1 id="Name3">user one</h1>
+                    <span id="Level3">Clasic</span>
+                  </div>
+              </div>
+              <div class="slot-center">
+                  <div class="slot-center-left">
+                    <i id="Star-input-1-3" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    <i id="Star-input-2-3" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    <i id="Star-input-3-3" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    <i id="Star-input-4-3" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    <i id="Star-input-5-3" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                  </div>
+                  <div class="slot-center-right">
+                    <span id="timeStamp3">8-7-2024</span>
+                  </div>
+              </div>
+              <div class="slot-bottom">
+                <p id="text3">Buen servico... persona confiablelo recomiendo ampliamente</p>
+
+              </div>
+            </div>
+
+            <div class="line2"></div>
+
+            <div class="slot" id="slot4">
+              <div class="slot-top">
+                  <div class="slot-top-left">
+                      <img id="Img4" src="Images\Img\girl.webp">
+                  </div>
+                  <div class="slot-top-right">
+                    <h1 id="Name4">user one</h1>
+                    <span id="Level4">Clasic</span>
+                  </div>
+              </div>
+              <div class="slot-center">
+                  <div class="slot-center-left">
+                      <i id="Star-input-1-4" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-2-4" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-3-4" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-4-4" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-5-4" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                  </div>
+                  <div class="slot-center-right">
+                    <span id="timeStamp4">8-7-2024</span>
+                  </div>
+              </div>
+              <div class="slot-bottom">
+                <p id="text4">Buen servico... persona confiablelo recomiendo ampliamente</p>
+
+              </div>
+            </div>
+
+            <div class="line2"></div>
+
+            <div class="slot" id="slot5">
+              <div class="slot-top">
+                  <div class="slot-top-left">
+                      <img id="Img5" src="Images\Img\girl.webp">
+                  </div>
+                  <div class="slot-top-right">
+                    <h1 id="Name5">user one</h1>
+                    <span id="Level5">Clasic</span>
+                  </div>
+              </div>
+              <div class="slot-center">
+                  <div class="slot-center-left">
+                    <i id="Star-input-1-5" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    <i id="Star-input-2-5" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    <i id="Star-input-3-5" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    <i id="Star-input-4-5" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    <i id="Star-input-5-5" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                  </div>
+                  <div class="slot-center-right">
+                    <span id="timeStamp5">8-7-2024</span>
+                  </div>
+              </div>
+              <div class="slot-bottom">
+                <p id="text5">Buen servico... persona confiablelo recomiendo ampliamente</p>
+
+              </div>
+            </div>
+
+            <div class="line2"></div>
+
+            <div class="slot" id="slot6">
+              <div class="slot-top">
+                  <div class="slot-top-left">
+                      <img id="Img6" src="Images\Img\girl.webp">
+                  </div>
+                  <div class="slot-top-right">
+                    <h1 id="Name6">user one</h1>
+                    <span id="Level6">Clasic</span>
+                  </div>
+              </div>
+              <div class="slot-center">
+                  <div class="slot-center-left">
+                    <i id="Star-input-1-6" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    <i id="Star-input-2-6" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    <i id="Star-input-3-6" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    <i id="Star-input-4-6" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    <i id="Star-input-5-6" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                  </div>
+                  <div class="slot-center-right">
+                    <span id="timeStamp6">8-7-2024</span>
+                  </div>
+              </div>
+              <div class="slot-bottom">
+                <p id="text6">Buen servico... persona confiablelo recomiendo ampliamente</p>
+
+              </div>
+            </div>
+
+            <div class="line2"></div>
+
+            <div class="slot" id="slot7">
+              <div class="slot-top">
+                  <div class="slot-top-left">
+                      <img id="Img7" src="Images\Img\girl.webp">
+                  </div>
+                  <div class="slot-top-right">
+                    <h1 id="Name7">user one</h1>
+                    <span id="Level7">Clasic</span>
+                  </div>
+              </div>
+              <div class="slot-center">
+                  <div class="slot-center-left">
+                    <i id="Star-input-1-7" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    <i id="Star-input-2-7" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    <i id="Star-input-3-7" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    <i id="Star-input-4-7" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    <i id="Star-input-5-7" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                  </div>
+                  <div class="slot-center-right">
+                    <span id="timeStamp7">8-7-2024</span>
+                  </div>
+              </div>
+              <div class="slot-bottom">
+                <p id="text7">Buen servico... persona confiablelo recomiendo ampliamente</p>
+
+              </div>
+            </div>
+
+            <div class="line2"></div>
+
+            <div class="slot" id="slot8">
+              <div class="slot-top">
+                  <div class="slot-top-left">
+                      <img id="Img8" src="Images\Img\girl.webp">
+                  </div>
+                  <div class="slot-top-right">
+                    <h1 id="Name8">user one</h1>
+                    <span id="Level8">Clasic</span>
+                  </div>
+              </div>
+              <div class="slot-center">
+                  <div class="slot-center-left">
+                      <i id="Star-input-1-8" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-2-8" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-3-8" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-4-8" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-5-8" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                  </div>
+                  <div class="slot-center-right">
+                    <span id="timeStamp8">8-7-2024</span>
+                  </div>
+              </div>
+              <div class="slot-bottom">
+                <p id="text8">Buen servico... persona confiablelo recomiendo ampliamente</p>
+
+              </div>
+            </div>
+
+            <div class="line2"></div>
+
+            <div class="slot" id="slot9">
+              <div class="slot-top">
+                  <div class="slot-top-left">
+                      <img id="Img9" src="Images\Img\girl.webp">
+                  </div>
+                  <div class="slot-top-right">
+                    <h1 id="Name9">user one</h1>
+                    <span id="Level9">Clasic</span>
+                  </div>
+              </div>
+              <div class="slot-center">
+                  <div class="slot-center-left">
+                    <i id="Star-input-1-9" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    <i id="Star-input-2-9" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    <i id="Star-input-3-9" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    <i id="Star-input-4-9" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    <i id="Star-input-5-9" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                  </div>
+                  <div class="slot-center-right">
+                    <span id="timeStamp9">8-7-2024</span>
+                  </div>
+              </div>
+              <div class="slot-bottom">
+                <p id="text9">Buen servico... persona confiablelo recomiendo ampliamente</p>
+
+              </div>
+            </div>
+
+            <div class="line2"></div>
+
+            <div class="slot" id="slot10">
+              <div class="slot-top">
+                  <div class="slot-top-left">
+                      <img id="Img10" src="Images\Img\girl.webp">
+                  </div>
+                  <div class="slot-top-right">
+                    <h1 id="Name10">user one</h1>
+                    <span id="Level10">Clasic</span>
+                  </div>
+              </div>
+              <div class="slot-center">
+                  <div class="slot-center-left">
+                    <i id="Star-input-1-10" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    <i id="Star-input-2-10" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    <i id="Star-input-3-10" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    <i id="Star-input-4-10" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    <i id="Star-input-5-10" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                  </div>
+                  <div class="slot-center-right">
+                    <span id="timeStamp10">8-7-2024</span>
+                  </div>
+              </div>
+              <div class="slot-bottom">
+                <p id="text10">Buen servico... persona confiablelo recomiendo ampliamente</p>
+
+              </div>
+            </div>
+
+            <div class="line2"></div>
+
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+           
+          
+          </section>
+
+
+          <section class="detail-block-right">
+              <div class="contact-block">
+
+                  <div class="contact-block-btn">
+                    <a id="shop-phone-link"></a>
+                    <i class="fa-solid fa-phone" style="color: #931d36;"></i>
+                  </div>
+
+                  <div class="line3"></div>
+
+                  <div class="contact-block-btn">
+                    <div>
+                      <span>Direccion</span>
+                      <a id="Shop-address-link"></a>
+                    </div>
+                    <i class="fa-solid fa-location-dot" style="color: #931d36;"></i>
+                  </div>
+
+                  <div class="line3"></div>
+
+                  <div class="contact-block-btn">
+                    <a id="Shop-email-link"></a>
+                    <i class="fa-regular fa-envelope" style="color: #931d36;"></i>
+                  </div>
+              </div>
+
+              <div class="appointment-btn-block">
+                <a href="#" target="_blank" id="appointment-btn">Agendar Cita</a>
+            </div>
+          </section>
+
+     </section>
+
+      
+
+    
+
+     
+
+
+
+
+    </main>
+
+ 
+
+ 
+    <script src="BRMP2.js" type="module"></script>
+</body>
+</html>

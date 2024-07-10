@@ -1,0 +1,2483 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+async function addReviewToProfile(profileId, review) {
+  try {
+    // Get a reference to the profile document
+    const profileDocRef = doc(colRef, profileId);
+
+    // Update the profile document with the new review
+    await updateDoc(profileDocRef, {
+      reviews: arrayUnion(review) // Use arrayUnion to add the review to the reviews array
+    });
+
+    console.log("Review added to profile with ID: ", profileId);
+  } catch (error) {
+    console.error("Error adding review to profile: ", error);
+  }
+}
+
+
+const profileId = "p1"; // Replace with the actual profile ID
+const review = {
+  rating: 5,
+  comment: "Great service!",
+  date: new Date()
+};
+
+addReviewToProfile(profileId, review);
+
+
+
+
+
+// add a new document to the collection
+async function addProfile(profile) {
+  try {
+    const docRef = await addDoc(colRef, profile);
+    console.log("Document written with ID: ", docRef.id);
+  } catch (error) {
+    console.error("Error adding document: ", error);
+  }
+}
+
+
+
+
+
+
+
+ const newProfile = {
+  name: "John Doe",
+  age: 30,
+  city: "New York",
+  timestamp: Timestamp.fromDate(new Date())
+};
+
+await addProfile(newProfile);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//----------------  Ranking-block-taller-list  --------------------//
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js";
+import { collection, getDocs, addDoc, Timestamp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js";
+import { query, orderBy, limit, where, onSnapshot } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js";
+
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyD4nCWBCEM24HNkKNFZEGUjo6nc5REiGvY",
+  authDomain: "taller-database.firebaseapp.com",
+  projectId: "taller-database",
+  storageBucket: "taller-database.appspot.com",
+  messagingSenderId: "969651083981",
+  appId: "1:969651083981:web:975fc5f413addb4e2ba784",
+  measurementId: "G-M8SRYXXKV1"
+};
+
+// init firebase
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+export { app, db, collection, getDocs, Timestamp, addDoc };
+export { query, orderBy, limit, where, onSnapshot };
+
+// collection ref
+const colRef = collection(db, 'Profile');
+
+// get collection data
+async function getFirstBook(colRef) {
+  try {
+    const snapshot = await getDocs(colRef);
+    let books = [];
+    snapshot.docs.forEach(doc => {
+      books.push({ ...doc.data(), id: doc.id });
+    });
+
+    return books;
+  } catch (error) {
+    console.error("Error getting documents: ", error);
+  }
+}
+
+const myObject = await getFirstBook(colRef);
+
+
+
+
+
+
+
+
+
+
+var gProfile = 1
+
+
+var p1   =  myObject[0]
+var p2   =  myObject[1]
+var p3   =  myObject[2]
+var p4   =  myObject[3]
+var p5   =  myObject[4]
+var p6   =  myObject[5]
+var p7   =  myObject[6]
+var p8   =  myObject[7]
+var p9   =  myObject[8]
+var p10  =  myObject[9]
+
+var p11  =  myObject[10]
+var p12  =  myObject[11]
+var p13  =  myObject[12]
+var p14  =  myObject[13]
+var p15  =  myObject[14]
+var p16  =  myObject[15]
+var p17  =  myObject[16]
+var p18  =  myObject[17]
+var p19  =  myObject[18]
+var p20  =  myObject[19]
+
+var p21  =  myObject[20]
+var p22  =  myObject[21]
+var p23  =  myObject[22]
+var p24  =  myObject[23]
+var p25  =  myObject[24]
+var p26  =  myObject[25]
+var p27  =  myObject[26]
+var p28  =  myObject[27]
+var p29  =  myObject[28]
+var p30  =  myObject[29]
+
+var p31  =  myObject[30]
+var p32  =  myObject[31]
+var p33  =  myObject[32]
+var p34  =  myObject[33]
+var p35  =  myObject[34]
+var p36  =  myObject[35]
+var p37  =  myObject[36]
+var p38  =  myObject[37]
+var p39  =  myObject[38]
+var p40  =  myObject[39]
+
+
+
+
+console.log(myObject[0].id)
+
+
+const profileId = myObject[0].id; // Replace with the actual profile ID
+
+const review = {
+  rating: 5,
+  comment: "Great service!",
+  date: new Date()
+};
+
+addReviewToProfile(profileId, review);
+
+
+
+
+
+
+
+
+
+
+
+
+function getprofile(){
+
+  var profile = gProfile 
+
+   if (profile === 1) {
+     return(p1)
+   }else if (profile === 2) {
+     return(p2)
+   }else if (profile === 3) {
+     return(p3)
+   }else if (profile === 4) {
+     return(p4)
+   }else if (profile === 5) {
+     return(p5)
+   }else if (profile === 6) {
+     return(p6)
+   }else if (profile === 7) {
+     return(p7)
+   }else if (profile === 8) {
+    return(p8)
+   }else if (profile === 9) {
+    return(p9)
+   }else if (profile === 10) {
+    return(p10)
+   }else if (profile === 11) {
+    return(p11)
+   }else if (profile === 12) {
+    return(p12)
+   }else if (profile === 13) {
+    return(p13)
+   }else if (profile === 14) {
+    return(p14)
+   }else if (profile === 15) {
+    return(p15)
+   }else if (profile === 16) {
+    return(p16)
+   }else if (profile === 17) {
+    return(p17)
+   }else if (profile === 18) {
+    return(p18)
+   }else if (profile === 19) {
+    return(p19)
+   }else if (profile === 20) {
+    return(p20)
+   }else if (profile === 21) {
+    return(p21)
+   }else if (profile === 22) {
+    return(p22)
+   }else if (profile === 23) {
+    return(p23)
+   }else if (profile === 24) {
+    return(p24)
+   }else if (profile === 25) {
+    return(p25)
+   }else if (profile === 26) {
+    return(p26)
+   }else if (profile === 27) {
+    return(p27)
+   }else if (profile === 28) {
+    return(p28)
+   }else if (profile === 29) {
+    return(p29)
+   }else if (profile === 30) {
+    return(p30)
+   }else if (profile === 31) {
+    return(p31)
+   }else if (profile === 32) {
+    return(p32)
+   }else if (profile === 33) {
+    return(p33)
+   }else if (profile === 34) {
+    return(p34)
+   }else if (profile === 35) {
+    return(p35)
+   }else if (profile === 36) {
+    return(p36)
+   }else if (profile === 37) {
+    return(p37)
+   }else if (profile === 38) {
+    return(p38)
+   }else if (profile === 39) {
+    return(p39)
+   }else if (profile === 40) {
+    return(p40)
+   }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+let starsAvarge   = getprofile().aStarAv;
+let stars         = getprofile().astars;
+let id            = getprofile().idT;
+let img           = getprofile().img;
+let name          = getprofile().name;
+let cc            = getprofile().occ;
+let openTimeA     = getprofile().openT;
+let pList         = getprofile().pList;
+let palbum        = getprofile().palbum;
+let paymentT      = getprofile().payment;
+let phone         = getprofile().phone;
+let promo         = getprofile().promo;
+let tLogo         = getprofile().tLogo;
+let tMap          = getprofile().tMap;
+let tWhatsapp     = getprofile().tWhatsapp;
+let tad           = getprofile().tad;
+let tadress       = getprofile().tadress;
+let tbimg         = getprofile().tbimg;
+let temail        = getprofile().temail;
+let type          = getprofile().type;
+let vet           = getprofile().vet;
+let wavailability = getprofile().wavailability;
+let website       = getprofile().website;
+
+
+
+var shopLogo              = tLogo 
+var bbgI                  = tbimg
+var shopName              = name  
+var amountofstars         = stars
+var vetted                = vet
+var album                 = palbum
+
+var Shopphone             = phone
+var address               = tadress 
+var email                 = temail
+var map                   = tMap 
+var open                  = openTimeA 
+var whatsapp              = tWhatsapp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let one   = 1
+  let two   = 2
+  let three = 3
+  let four  = 4
+  let five  = 5
+
+
+
+ close.addEventListener('click',closeReview)
+
+
+
+
+
+
+
+
+
+
+
+
+function submitReview() {
+    const reviewText = document.getElementById('reviewText').value;
+    console.log(reviewText)
+    if (selectedStars === 0 || reviewText.trim() === '') {
+        alert('Por favor, seleccione una calificación de estrellas y escriba una reseña.');
+        return;
+    }
+
+    const reviewContainer = document.createElement('div');
+    reviewContainer.className = 'review';
+
+
+    const starsSpan = document.createElement('span');
+    starsSpan.className = 'stars';
+    for (let i = 0; i < selectedStars; i++) {
+        starsSpan.innerHTML += '&#9733;';
+    }
+ 
+    const reviewParagraph = document.createElement('p');
+    reviewParagraph.textContent = reviewText;
+
+    reviewContainer.appendChild(starsSpan);
+    reviewContainer.appendChild(reviewParagraph);
+
+    document.getElementById('submittedReviews').appendChild(reviewContainer);
+
+    // Reset the form
+    document.getElementById('reviewText').value = '';
+    highlightStars(0);
+    selectedStars = 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="review-posted-block">
+
+              <div class="review-posted" id="slot1">
+                  <div  class="review-posted-top">
+                    <img>
+                    <div class="review-posted-top-right">
+                      <h1 class="review-posted-Name"></h1>
+                      <div class="review-posted-tags">
+                        <span class="review-posted-level"></span>
+                        <span class="review-posted-photos"></span>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="review-posted-bottom">
+                    <div class="review-posted-bottom-top">
+                      <div class="review-posted-stars" id="review-posted-starst">
+                        <i id="Star-input-1" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                        <i id="Star-input-2" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                        <i id="Star-input-3" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                        <i id="Star-input-4" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                        <i id="Star-input-5" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      </div>
+                      <span id="dateStamp"></span>
+                    </div>
+                    <div class="review-posted-bottom-bottom">
+                      <p id="review-posted-text"></p>
+                    </div>
+
+                  </div>
+
+              </div>
+
+              <div class="line2"></div>
+
+              <div class="review-posted" id="slot2">
+                <div  class="review-posted-top">
+                  <img id="review-posted-img-2">
+                  <div class="review-posted-top-right">
+                    <h1 id="review-posted-Name-2"></h1>
+                    <div class="review-posted-tags">
+                      <span id="review-posted-level-2"></span>
+                      <span id="review-posted-photos-2"></span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="review-posted-bottom">
+                  <div class="review-posted-bottom-top">
+                    <div class="review-posted-stars" id="review-posted-starst-2">
+                      <i id="Star-input-1-2" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-2-2" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-3-2" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-4-2" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-5-2" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    </div>
+                    <span id="dateStamp-2"></span>
+                  </div>
+                  <div class="review-posted-bottom-bottom">
+                    <p id="review-posted-text-2"></p>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="line2"></div>
+
+              <div class="review-posted" id="slot3">
+                <div  class="review-posted-top">
+                  <img id="review-posted-img-3">
+                  <div class="review-posted-top-right">
+                    <h1 id="review-posted-Name-3"></h1>
+                    <div class="review-posted-tags">
+                      <span id="review-posted-level-3"></span>
+                      <span id="review-posted-photos-3"></span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="review-posted-bottom">
+                  <div class="review-posted-bottom-top">
+                    <div class="review-posted-stars" id="review-posted-starst-3">
+                      <i id="Star-input-1-3" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-2-3" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-3-3" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-4-3" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-5-3" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    </div>
+                    <span id="dateStamp-3"></span>
+                  </div>
+                  <div class="review-posted-bottom-bottom">
+                    <p id="review-posted-text-3"></p>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="line2"></div>
+
+              <div class="review-posted" id="slot4">
+                <div  class="review-posted-top">
+                  <img id="review-posted-img-4">
+                  <div class="review-posted-top-right">
+                    <h1 id="review-posted-Name-4"></h1>
+                    <div class="review-posted-tags">
+                      <span id="review-posted-level-4"></span>
+                      <span id="review-posted-photos-4"></span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="review-posted-bottom">
+                  <div class="review-posted-bottom-top">
+                    <div class="review-posted-stars" id="review-posted-starst-4">
+                      <i id="Star-input-1-4" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-2-4" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-3-4" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-4-4" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-5-4" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    </div>
+                    <span id="dateStamp-4"></span>
+                  </div>
+                  <div class="review-posted-bottom-bottom">
+                    <p id="review-posted-text-4"></p>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="line2"></div>
+
+              <div class="review-posted" id="slot5">
+                <div  class="review-posted-top">
+                  <img id="review-posted-img-5">
+                  <div class="review-posted-top-right">
+                    <h1 id="review-posted-Name-5"></h1>
+                    <div class="review-posted-tags">
+                      <span id="review-posted-level-5"></span>
+                      <span id="review-posted-photos-5"></span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="review-posted-bottom">
+                  <div class="review-posted-bottom-top">
+                    <div class="review-posted-stars" id="review-posted-starst-5">
+                      <i id="Star-input-1-5" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-2-5" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-3-5" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-4-5" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-5-5" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    </div>
+                    <span id="dateStamp-5"></span>
+                  </div>
+                  <div class="review-posted-bottom-bottom">
+                    <p id="review-posted-text-5"></p>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="line2"></div>
+
+              <div class="review-posted" id="slot6">
+                <div  class="review-posted-top">
+                  <img id="review-posted-img-6">
+                  <div class="review-posted-top-right">
+                    <h1 id="review-posted-Name-6"></h1>
+                    <div class="review-posted-tags">
+                      <span id="review-posted-level-6"></span>
+                      <span id="review-posted-photos-6"></span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="review-posted-bottom">
+                  <div class="review-posted-bottom-top">
+                    <div class="review-posted-stars" id="review-posted-starst-6">
+                      <i id="Star-input-1-6" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-2-6" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-3-6" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-4-6" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-5-6" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    </div>
+                    <span id="dateStamp-6"></span>
+                  </div>
+                  <div class="review-posted-bottom-bottom">
+                    <p id="review-posted-text-6"></p>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="line2"></div>
+
+              <div class="review-posted" id="slot7">
+                <div  class="review-posted-top">
+                  <img id="review-posted-img-7">
+                  <div class="review-posted-top-right">
+                    <h1 id="review-posted-Name-7"></h1>
+                    <div class="review-posted-tags">
+                      <span id="review-posted-level-7"></span>
+                      <span id="review-posted-photos-7"></span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="review-posted-bottom">
+                  <div class="review-posted-bottom-top">
+                    <div class="review-posted-stars" id="review-posted-starst-7">
+                      <i id="Star-input-1-7" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-2-7" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-3-7" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-4-7" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-5-7" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    </div>
+                    <span id="dateStamp-7"></span>
+                  </div>
+                  <div class="review-posted-bottom-bottom">
+                    <p id="review-posted-text-7"></p>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="line2"></div>
+
+              <div class="review-posted" id="slot8">
+                <div  class="review-posted-top">
+                  <img id="review-posted-img-8">
+                  <div class="review-posted-top-right">
+                    <h1 id="review-posted-Name-8"></h1>
+                    <div class="review-posted-tags">
+                      <span id="review-posted-level-8"></span>
+                      <span id="review-posted-photos-8"></span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="review-posted-bottom">
+                  <div class="review-posted-bottom-top">
+                    <div class="review-posted-stars" id="review-posted-starst-8">
+                      <i id="Star-input-1-8" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-2-8" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-3-8" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-4-8" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-5-8" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    </div>
+                    <span id="dateStamp-8"></span>
+                  </div>
+                  <div class="review-posted-bottom-bottom">
+                    <p id="review-posted-text-8"></p>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="line2"></div>
+
+              <div class="review-posted" id="slot9">
+                <div  class="review-posted-top">
+                  <img id="review-posted-img-9">
+                  <div class="review-posted-top-right">
+                    <h1 id="review-posted-Name-9"></h1>
+                    <div class="review-posted-tags">
+                      <span id="review-posted-level-9"></span>
+                      <span id="review-posted-photos-9"></span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="review-posted-bottom">
+                  <div class="review-posted-bottom-top">
+                    <div class="review-posted-stars" id="review-posted-starst-9">
+                      <i id="Star-input-1-9" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-2-9" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-3-9" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-4-9" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-5-9" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    </div>
+                    <span id="dateStamp-9"></span>
+                  </div>
+                  <div class="review-posted-bottom-bottom">
+                    <p id="review-posted-text-9"></p>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="line2"></div>
+              
+              <div class="review-posted" id="slot10">
+                <div  class="review-posted-top">
+                  <img id="review-posted-img-10">
+                  <div class="review-posted-top-right">
+                    <h1 id="review-posted-Name-10"></h1>
+                    <div class="review-posted-tags">
+                      <span id="review-posted-level-10"></span>
+                      <span id="review-posted-photos-10"></span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="review-posted-bottom">
+                  <div class="review-posted-bottom-top">
+                    <div class="review-posted-stars" id="review-posted-starst-10">
+                      <i id="Star-input-1-10" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-2-10" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-3-10" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-4-10" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                      <i id="Star-input-5-10" class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    </div>
+                    <span id="dateStamp-10"></span>
+                  </div>
+                  <div class="review-posted-bottom-bottom">
+                    <p id="review-posted-text-10"></p>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+
+            </div>
+
+
+
+
+              const review = {
+      rating: 5,
+      comment: "Great service!",
+      date: new Date()
+    };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------- leave-review-block-popup --------------*/
+.leave-review-block{
+  width:70%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  background-color:  #7d7c7c;
+  margin: 2rem  auto;
+}
+.star {
+  font-size: 3rem;
+  cursor: pointer;
+}
+.highlighted {
+  color: #931D36;
+}
+
+
+
+/*----------- leave-review-block --------------*/
+.leave-review-block h1{
+  color: #000000;
+   font-size: 2rem;
+}
+.fa-xmark{
+  color: #931D36;
+  margin: 1rem 0 1rem 90%;
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: flex-end;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  padding: .3rem;
+  border: 5px solid #931D36;
+
+
+
+}
+.review-Input-block{
+ margin:-3rem 0 2rem  0;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+.sI-block{
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sI-block i{
+  font-size: 2rem;
+  margin: 1rem;
+
+}
+.sI-block textarea{
+  width: 30rem;
+  height: 5rem;
+  margin: 1rem;
+
+}
+#submit{
+  color: #931D36;
+  font-weight: 800;
+  padding: .5rem 1rem;
+  border: 4px solid #931D36;
+  background-color: #ffffffb0;
+}
+
+#hidden-line{
+  display: none;
+}
+
+
+
+
+
+
+// Function to choose an item from each array
+function chooseItemsFromArrays(obj) {
+  const arrays = getAllArrays(obj);
+  console.log(arrays)
+  const chosenItems = {};
+
+  arrays.forEach(({ key, array }) => {
+    const choice = prompt(`Choose an index (0 to ${array.length - 1}) from the array "${key}":\n${JSON.stringify(array)}`);
+    const index = parseInt(choice);
+    if (index >= 0 && index < array.length) {
+      chosenItems[key] = array[index];
+    } else {
+      chosenItems[key] = null; // or handle invalid choice appropriately
+    }
+  });
+
+  return chosenItems;
+}
+
+// Example usage
+const exampleObject = {
+  profile: {
+    name: 'John Doe',
+    reviews: ['Great service', 'Good prices', 'Friendly staff'],
+    ratings: [5, 4, 3, 5, 4]
+  },
+  settings: {
+    preferences: ['Dark mode', 'Notifications', 'Auto-update'],
+    language: ['English', 'Spanish', 'French']
+  },
+  data: {
+    values: [10, 20, 30],
+    items: ['Item1', 'Item2', 'Item3']
+  }
+};
+
+const chosenItems = chooseItemsFromArrays(exampleObject);
+console.log('Chosen items:', chosenItems);
+
+
+
+
+
+
+
+
+
+
+
+
+
+function slot2(){
+  function getReviewSlot2info(){
+    let count  = (items[1])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot2info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot2info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot2info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function slot3(){
+  function getReviewSlot3info(){
+    let count  = (items[2])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot3info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot3info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot3info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+
+}
+function slot4(){
+  function getReviewSlot4info(){
+    let count  = (items[3])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot4info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot4info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot4info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function slot5(){
+  function getReviewSlot5info(){
+    let count  = (items[4])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot5info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot5info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot5info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function slot6(){
+  function getReviewSlot6info(){
+    let count  = (items[5])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot6info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot6info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot6info(), keyToFind);
+    console.log(itemBlock)
+  }
+
+
+  date()
+  comment()
+rating()
+
+}
+function slot7(){
+  function getReviewSlot7info(){
+    let count  = (items[6])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot7info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot7info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot7info(), keyToFind);
+    console.log(itemBlock)
+  }
+
+
+  date()
+  comment()
+  rating()
+
+}
+function slot8(){
+  function getReviewSlot8info(){
+    let count  = (items[7])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot8info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot8info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot8info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function slot9(){
+  function getReviewSlot9info(){
+    let count  = (items[8])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot9info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot9info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot9info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function slot10(){
+  function getReviewSlot10info(){
+    let count  = (items[9])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot10info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot10info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot10info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function blockOne(){
+  
+  slot2()
+  slot3()
+  slot4()
+  slot5()
+  slot6()
+  slot7()
+  slot8()
+  slot9()
+  slot10()
+}
+blockOne()
+
+
+
+
+
+
+
+
+
+
+function slot11(){
+  function getReviewSlot11info(){
+    let count  = (items[10])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot11info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot11info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot11info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function slot12(){
+  function getReviewSlot12info(){
+    let count  = (items[11])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot12info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot12info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot12info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function slot13(){
+  function getReviewSlot13info(){
+    let count  = (items[12])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot13info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot13info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot13info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+
+}
+function slot14(){
+  function getReviewSlot14info(){
+    let count  = (items[13])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot14info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot14info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot14info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function slot15(){
+  function getReviewSlot15info(){
+    let count  = (items[14])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot15info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot15info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot15info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function slot16(){
+  function getReviewSlot16info(){
+    let count  = (items[15])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot16info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot16info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot16info(), keyToFind);
+    console.log(itemBlock)
+  }
+
+
+  date()
+  comment()
+
+rating()
+
+}
+function slot17(){
+  function getReviewSlot17info(){
+    let count  = (items[16])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot17info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot17info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot17info(), keyToFind);
+    console.log(itemBlock)
+  }
+
+
+  date()
+  comment()
+  rating()
+
+}
+function slot18(){
+  function getReviewSlot18info(){
+    let count  = (items[17])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot18info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot18info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot18info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function slot19(){
+  function getReviewSlot19info(){
+    let count  = (items[18])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot19info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot19info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot19info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function slot20(){
+  function getReviewSlot20info(){
+    let count  = (items[19])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot20info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot20info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot20info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function blockTwo(){
+  slot11()
+  slot12()
+  slot13()
+  slot14()
+  slot15()
+  slot16()
+  slot17()
+  slot18()
+  slot19()
+  slot20()
+}
+blockTwo()
+
+
+
+function slot21(){
+  function getReviewSlot21info(){
+    let count  = (items[20])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot21info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot21info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot21info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function slot22(){
+  function getReviewSlot12info(){
+    let count  = (items[21])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot22info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot22info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot22info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function slot23(){
+  function getReviewSlot13info(){
+    let count  = (items[22])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot23info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot23info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot23info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+
+}
+function slot24(){
+  function getReviewSlot24info(){
+    let count  = (items[23])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot24info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot24info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot24info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function slot25(){
+  function getReviewSlot25info(){
+    let count  = (items[24])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot25info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot25info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot25info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function slot26(){
+  function getReviewSlot26info(){
+    let count  = (items[25])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot26info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot26info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot26info(), keyToFind);
+    console.log(itemBlock)
+  }
+
+
+  date()
+  comment()
+
+rating()
+
+}
+function slot27(){
+  function getReviewSlot17info(){
+    let count  = (items[26])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot17info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot17info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot17info(), keyToFind);
+    console.log(itemBlock)
+  }
+
+
+  date()
+  comment()
+  rating()
+
+}
+function slot28(){
+  function getReviewSlot18info(){
+    let count  = (items[27])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot18info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot18info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot18info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function slot29(){
+  function getReviewSlot19info(){
+    let count  = (items[28])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot29info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot29info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot29info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function slot30(){
+  function getReviewSlot30info(){
+    let count  = (items[29])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot30info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot30info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot30info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function blockThree(){
+  slot21()
+  slot22()
+  slot23()
+  slot24()
+  slot25()
+  slot26()
+  slot27()
+  slot28()
+  slot29()
+  slot30()
+}
+blockThree()
+
+
+
+function slot31(){
+  function getReviewSlot31info(){
+    let count  = (items[30])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot31info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot31info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot31info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function slot32(){
+  function getReviewSlot32info(){
+    let count  = (items[31])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot32info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot32info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot32info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function slot33(){
+  function getReviewSlot3info(){
+    let count  = (items[32])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot33info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot33info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot33info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+
+}
+function slot34(){
+  function getReviewSlot34info(){
+    let count  = (items[33])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot34info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot34info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot34info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function slot35(){
+  function getReviewSlot35info(){
+    let count  = (items[34])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot35info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot35info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot35info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function slot36(){
+  function getReviewSlot6info(){
+    let count  = (items[35])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot36info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot36info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot36info(), keyToFind);
+    console.log(itemBlock)
+  }
+
+
+  date()
+  comment()
+
+rating()
+
+}
+function slot37(){
+  function getReviewSlot7info(){
+    let count  = (items[36])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot37info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot37info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot37info(), keyToFind);
+    console.log(itemBlock)
+  }
+
+
+  date()
+  comment()
+  rating()
+
+}
+function slot38(){
+  function getReviewSlot8info(){
+    let count  = (items[37])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot38info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot38info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot38info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function slot39(){
+  function getReviewSlot9info(){
+    let count  = (items[38])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot39info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot39info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot39info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function slot40(){
+  function getReviewSlot10info(){
+    let count  = (items[39])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot40info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot40info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot40info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function blockFour(){
+  slot31()
+  slot32()
+  slot33()
+  slot34()
+  slot35()
+  slot36()
+  slot37()
+  slot38()
+  slot39()
+  slot40()
+}
+blockFour()
+
+
+
+
+
+function slot41(){
+  function getReviewSlot11info(){
+    let count  = (items[40])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot41info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot41info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot41info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function slot42(){
+  function getReviewSlot12info(){
+    let count  = (items[41])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot42info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot42info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot42info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function slot43(){
+  function getReviewSlot43info(){
+    let count  = (items[42])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot43info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot43info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot43info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+
+}
+function slot44(){
+  function getReviewSlot14info(){
+    let count  = (items[43])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot44info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot44info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot44info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function slot45(){
+  function getReviewSlot15info(){
+    let count  = (items[44])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot45info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot45info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot45info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function slot46(){
+  function getReviewSlot16info(){
+    let count  = (items[45])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot46info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot46info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot46info(), keyToFind);
+    console.log(itemBlock)
+  }
+
+  date()
+  comment()
+  rating()
+}
+function slot47(){
+  function getReviewSlot47info(){
+    let count  = (items[46])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot47info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot47info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot47info(), keyToFind);
+    console.log(itemBlock)
+  }
+
+
+  date()
+  comment()
+  rating()
+
+}
+function slot48(){
+  function getReviewSlot18info(){
+    let count  = (items[47])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot48info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot48info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot48info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function slot49(){
+  function getReviewSlot49info(){
+    let count  = (items[48])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot49info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot49info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot49info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function slot50(){
+  function getReviewSlot50info(){
+    let count  = (items[49])
+    let finalCount = count[1]-1
+    let arrayBlock = getArraysNewestToOldest(reviews)
+    let arrayBlockFound = arrayBlock[0]
+    let arrayInfo = arrayBlockFound[finalCount]
+    return(arrayInfo)
+  }
+  function rating(){
+    const keyToFind = 'rating';
+    const itemBlock = getItemFromObject(getReviewSlot50info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function comment(){
+    const keyToFind = 'comment';
+    const itemBlock = getItemFromObject(getReviewSlot50info(), keyToFind);
+    console.log(itemBlock)
+  }
+  function date(){
+    const keyToFind = 'date';
+    const itemBlock = getItemFromObject(getReviewSlot50info(), keyToFind);
+    console.log(itemBlock)
+  }
+  date()
+  comment()
+  rating()
+}
+function blockFive(){
+  slot41()
+  slot42()
+  slot43()  
+  slot44()
+  slot45()
+  slot46()
+  slot47()
+  slot48()
+  slot49()
+  slot50()
+}
+blockFive()
+
+
+
+
+
+
+
+

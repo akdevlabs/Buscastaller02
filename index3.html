@@ -14,7 +14,7 @@
     <title>BuscasTaller/Ranking/Mecanica</title>
     <link rel="stylesheet" href="BRM.css">
     <meta name="viewport" content="width=device-width, intial-scale=1, shrinck-to-fit=no">
-    <link rel="shortcut icon" href="Logos/Simple-Icon-Red.webp">
+    <link rel="shortcut icon" href="Images\Logos/Simple-Icon-Red.webp">
     <style type="text/css"></style>
 
 </head>
@@ -22,25 +22,87 @@
     <header>
         <nav>
           <section class="nav-Block" id="nav-Block">
-            <a  href="index.html"><img class="logo"  src="Logos/Full-Logo-White-Red-hollow.webp"></a>
-            <a  href="index.html"><img class="logoIcon"  src="Logos/Simple-Icon-Red.webp"></a>
+
+            <section class="logo-Block">
+              <img src=Images\Logos\Simple-Icon-Red.webp>
+            </section>  
+
+            <section class="search-Block">
+
+              <div class="search-Block-top">
+
+                <input class="in" type="search"placeholder="Buscar talleres en tu área ">
+
+
+                <button class="Nav-search-btn" id="searchButton2"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button> 
+              </div>
+
+              <div class="search-Block-bottom">
+                <div class="dropp-block-section">
+
+                  <div class="dropdown">
+                      <label>Cobertura:</label>
+                      <select class="myDropdown" id="myDropdown">
+                        <option value="Centro" id="Todos-B-C">Centro</option>
+                        <option value="Norte" id="North-B">Norte</option>
+                        <option value="Este"  id="B-East">Este</option>
+                        <option value="Sur"   id="B-South">Sur</option>
+                        <option value="Oeste" id="B-West">Oeste</option>
+                      </select>
+                  </div>
+          
+                  <div class="dropdown">
+                    <label>Tipo de Pago:</label>
+                    <select class="myDropdown" id="myDropdownP">
+                      <option value="Todo"    id="Todos-B-P">Todos</option>
+                      <option value="Efectivo" id="B-Cash">Efectivo</option>
+                      <option value="Tarjeta"     id="B-CC">Tarjeta</option>
+                    </select>
+                  </div>
+                  
+          
+                </div>
+              </div>
+
+            </section>
 
             <section class="nav-links" id="navLinks">
              
-                    <ul>
-                        <li><a href="#Ranking">Servicios</a></li>
-                        <li><a href="#offering">Cómo Funciona</a></li>
-                        <li><a href="index2.html">Contáctanos</a></li>
-                    </ul>  
+                <ul>
+                    <li>
+                      <a href="index.html">
+                        <i class="fa-solid fa-house" style="color: #931d37;"></i>
+                        <span>Home</span>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-hammer" style="color: #931d37;"></i>
+                        <span>Agregue su Taller</span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a id="VideoBtn" href="#">
+                        <i class="fa-solid fa-list-check" style="color: #931d36;"></i>
+                        <span>Cómo funciona</span>  
+                      </a>
+                    </li>
+                </ul>  
                     
                     
             </section>
 
-            
-            <a href="index4.html" target="_blank" class="log">
-              <img class="login" src="Images/icons/login.webp"  width="80px" >
-            </a>
-        </section>
+            <section class="login-Block">
+              <a href="#" target="_blank" class="log">Log In</a>
+            </section>
+
+            <section class="SignIn-Block">
+              <a href="#" target="_blank" class="Sign">Sign In</a>
+            </section>
+           
+          </section>
 
           <div class="mobile-nav-block">
 
@@ -48,7 +110,7 @@
                   <span>.</span>
                   
                   <div class="Nav-Block-Logo">
-                      <a href="#"><img   src="Logos/Full-Logo-White-Red-hollow.webp"></a>
+                    <img src=Images\Logos\Simple-Icon-Red.webp>
                   </div>
   
                   <div class="Mobiel-Nav-Header-Btn">
@@ -76,16 +138,525 @@
               </div>
           </div>
 
-          
-      </nav>
+          <div class="line"></div>
+
+        </nav>
     </header> 
+
     <main>
+
+      <section class="Video-tutorial-block" id="Video-tutorial">
+        
+        <video width="100%" height="100%" controls>
+          <source src="#" type="video/mp4">
+          <source src="#" type="video/ogg">
+        Your browser does not support the video tag.
+        </video>
+        <i class="fa-solid fa-xmark" id="CloseVideo" style="color: #931d36;"></i>
+      </section>
+
+      <section class="Ranking-block">
+
+        <div class="Ranking-block-top">
+
+          <div class="info-banner-block">
+            <span id="base-info-banner">Buscas Taller > Mecanico ></span>
+            <span id="info-banner-section"></span>
+            <span id="info-banner-payment"></span>
+          </div>
+    
+          <div class="title-block">
+            <h1   id="title">Los 10 Mejores Talleres de Reparación en el</h1>
+            <h1   id="title-block-section"></h1> 
+          </div>
+        </div>
+
+        <div class="Ranking-block-Content">
+
+          <div class="Ranking-block-left">
+
+              <div class="block" id="block-one">
+
+                <div class="block-left">
+                  <div class="profilePicblock">
+                    <div class="profilePic" id="profilePic">
+                      <img src="Images\tppicw\ppT1.jpg">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="block-right">
+
+                  <div class="taller-Name-block">
+                    <div class="block-Num-name">
+                        <h1 class="rank-Num" id="rank-Num">1.</h1>
+                        <h1 class="taller-Name" id="taller-Name">Taller 1</h1>
+                    </div>  
+                  </div>
+
+                  <div class="iconStar" id="iconStar">
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                  </div>
+                
+                  <div class="coloniaBlock">
+                      <h3>Colonia:</h3>
+                      <span class="colonia" id="colonia">SNTE</span>
+                  </div>
+                    
+                  <div class="statusBlock">
+                      <span class="status" id="status">Open</span>
+                    
+                      <span class="time" id="time">Until 7:00 PM</span>
+                  </div>
+  
+                  <div class="paymentBlock">
+                 
+                      <i id="pCash" class="fa-solid fa-money-bill" style="color: #00bc00;"></i>
+                 
+                      <i id="pCredit" class="fa-solid fa-credit-card" style="color: #931d36;"></i>
+                  </div>
+
+
+
+
+
+
+                </div>
+              
+              </div>
+
+              <div class="block" id="block-two">
+
+                <div class="block-left">
+                  <div class="profilePicblock">
+                    <div class="profilePic" id="profilePic"></div>
+                  </div>
+                </div>
+
+                <div class="block-right">
+
+                  <div class="taller-Name-block">
+                    <div class="block-Num-name">
+                        <h1 class="rank-Num" id="rank-Num">2.</h1>
+                        <h1 class="taller-Name" id="taller-Name">Taller 1</h1>
+                    </div>  
+                  </div>
+
+                  <div class="iconStar" id="iconStar">
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                  </div>
+                
+                  <div class="coloniaBlock">
+                      <h3>Colonia:</h3>
+                      <span class="colonia" id="colonia"></span>
+                  </div>
+                    
+                  <div class="statusBlock">
+                      <span class="status" id="status"></span>
+                    
+                      <span class="time" id="time"></span>
+                  </div>
+  
+                  <div class="paymentBlock">
+                      <span class="pCash" id="pCash"></span>
+                    
+                      <span class="pCredit" id="pCredit"></span>
+                  </div>
+
+
+
+
+
+
+                </div>
+              
+              </div>
+
+              <div class="block" id="block-three">
+
+                <div class="block-left">
+                  <div class="profilePicblock">
+                    <div class="profilePic" id="profilePic"></div>
+                  </div>
+                </div>
+
+                <div class="block-right">
+
+                  <div class="taller-Name-block">
+                    <div class="block-Num-name">
+                        <h1 class="rank-Num" id="rank-Num">1.</h1>
+                        <h1 class="taller-Name" id="taller-Name">Taller 1</h1>
+                    </div>  
+                  </div>
+
+                  <div class="iconStar" id="iconStar">
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                  </div>
+                
+                  <div class="coloniaBlock">
+                      <h3>Colonia:</h3>
+                      <span class="colonia" id="colonia"></span>
+                  </div>
+                    
+                  <div class="statusBlock">
+                      <span class="status" id="status"></span>
+                    
+                      <span class="time" id="time"></span>
+                  </div>
+  
+                  <div class="paymentBlock">
+                      <span class="pCash" id="pCash"></span>
+                    
+                      <span class="pCredit" id="pCredit"></span>
+                  </div>
+
+
+
+
+
+
+                </div>
+              
+              </div>
+
+              <div class="block" id="block-four">
+
+                <div class="block-left">
+                  <div class="profilePicblock">
+                    <div class="profilePic" id="profilePic"></div>
+                  </div>
+                </div>
+
+                <div class="block-right">
+
+                  <div class="taller-Name-block">
+                    <div class="block-Num-name">
+                        <h1 class="rank-Num" id="rank-Num">1.</h1>
+                        <h1 class="taller-Name" id="taller-Name">Taller 1</h1>
+                    </div>  
+                  </div>
+
+                  <div class="iconStar" id="iconStar">
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                  </div>
+                
+                  <div class="coloniaBlock">
+                      <h3>Colonia:</h3>
+                      <span class="colonia" id="colonia"></span>
+                  </div>
+                    
+                  <div class="statusBlock">
+                      <span class="status" id="status"></span>
+                    
+                      <span class="time" id="time"></span>
+                  </div>
+  
+                  <div class="paymentBlock">
+                      <span class="pCash" id="pCash"></span>
+                    
+                      <span class="pCredit" id="pCredit"></span>
+                  </div>
+
+
+
+
+
+
+                </div>
+              
+              </div>
+
+              <div class="block" id="block-five">
+
+                <div class="block-left">
+                  <div class="profilePicblock">
+                    <div class="profilePic" id="profilePic"></div>
+                  </div>
+                </div>
+
+                <div class="block-right">
+
+                  <div class="taller-Name-block">
+                    <div class="block-Num-name">
+                        <h1 class="rank-Num" id="rank-Num">1.</h1>
+                        <h1 class="taller-Name" id="taller-Name">Taller 1</h1>
+                    </div>  
+                  </div>
+
+                  <div class="iconStar" id="iconStar">
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                  </div>
+                
+                  <div class="coloniaBlock">
+                      <h3>Colonia:</h3>
+                      <span class="colonia" id="colonia"></span>
+                  </div>
+                    
+                  <div class="statusBlock">
+                      <span class="status" id="status"></span>
+                    
+                      <span class="time" id="time"></span>
+                  </div>
+  
+                  <div class="paymentBlock">
+                      <span class="pCash" id="pCash"></span>
+                    
+                      <span class="pCredit" id="pCredit"></span>
+                  </div>
+
+
+
+
+
+
+                </div>
+              
+              </div>
+
+              <div class="block" id="block-six">
+
+                <div class="block-left">
+                  <div class="profilePicblock">
+                    <div class="profilePic" id="profilePic"></div>
+                  </div>
+                </div>
+
+                <div class="block-right">
+
+                  <div class="taller-Name-block">
+                    <div class="block-Num-name">
+                        <h1 class="rank-Num" id="rank-Num">1.</h1>
+                        <h1 class="taller-Name" id="taller-Name">Taller 1</h1>
+                    </div>  
+                  </div>
+
+                  <div class="iconStar" id="iconStar">
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                  </div>
+                
+                  <div class="coloniaBlock">
+                      <h3>Colonia:</h3>
+                      <span class="colonia" id="colonia"></span>
+                  </div>
+                    
+                  <div class="statusBlock">
+                      <span class="status" id="status"></span>
+                    
+                      <span class="time" id="time"></span>
+                  </div>
+  
+                  <div class="paymentBlock">
+                      <span class="pCash" id="pCash"></span>
+                    
+                      <span class="pCredit" id="pCredit"></span>
+                  </div>
+
+
+
+
+
+
+                </div>
+              
+              </div>
+
+              <div class="block" id="block-seven">
+
+                <div class="block-left">
+                  <div class="profilePicblock">
+                    <div class="profilePic" id="profilePic"></div>
+                  </div>
+                </div>
+
+                <div class="block-right">
+
+                  <div class="taller-Name-block">
+                    <div class="block-Num-name">
+                        <h1 class="rank-Num" id="rank-Num">1.</h1>
+                        <h1 class="taller-Name" id="taller-Name">Taller 1</h1>
+                    </div>  
+                  </div>
+
+                  <div class="iconStar" id="iconStar">
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                  </div>
+                
+                  <div class="coloniaBlock">
+                      <h3>Colonia:</h3>
+                      <span class="colonia" id="colonia"></span>
+                  </div>
+                    
+                  <div class="statusBlock">
+                      <span class="status" id="status"></span>
+                    
+                      <span class="time" id="time"></span>
+                  </div>
+  
+                  <div class="paymentBlock">
+                      <span class="pCash" id="pCash"></span>
+                    
+                      <span class="pCredit" id="pCredit"></span>
+                  </div>
+
+
+
+
+
+
+                </div>
+              
+              </div>
+
+              <div class="block" id="block-eight">
+
+                <div class="block-left">
+                  <div class="profilePicblock">
+                    <div class="profilePic" id="profilePic"></div>
+                  </div>
+                </div>
+
+                <div class="block-right">
+
+                  <div class="taller-Name-block">
+                    <div class="block-Num-name">
+                        <h1 class="rank-Num" id="rank-Num">1.</h1>
+                        <h1 class="taller-Name" id="taller-Name">Taller 1</h1>
+                    </div>  
+                  </div>
+
+                  <div class="iconStar" id="iconStar">
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                    <i class="fa-solid fa-star" style="color: #931d36;"></i>
+                  </div>
+                
+                  <div class="coloniaBlock">
+                      <h3>Colonia:</h3>
+                      <span class="colonia" id="colonia"></span>
+                  </div>
+                    
+                  <div class="statusBlock">
+                      <span class="status" id="status"></span>
+                    
+                      <span class="time" id="time"></span>
+                  </div>
+  
+                  <div class="paymentBlock">
+                      <span class="pCash" id="pCash"></span>
+                    
+                      <span class="pCredit" id="pCredit"></span>
+                  </div>
+
+
+
+
+
+
+                </div>
+              
+              </div>
+
+
+          </div>
+
+          <div class="Ranking-block-right">
+            <div class="mapsBlock">
+                <iframe id="myIframe"  src="https://www.google.com/maps/d/u/0/embed?mid=1r1FTVVW58GZKPrFcr7t29_25dXoLhAU&ehbc=2E312F"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+            </div>
+          </div>
+
+         
+
+        </div>
+      </section>
+
+      <section class="Ranking-page_btn">
+      </section>
+      
+      <section class="Ranking-page_btn">
+      </section>
+
+
 
 
     </main>
 
     <footer>
-
+      <div class="footerTop">
+          <div class="footer-logo">
+               <a> <img href="https://buscastaller.netlify.app" class="blackLogo" src="Images\Logos\Full-Logo Black White.webp"></a>
+          </div>
+  
+          <div class="mediaIcons">
+             
+                  <a href="https://www.facebook.com/profile.php?id=100086056975804" target="_blank" ><i  class="fa fa-facebook" id="icons"></i></a>
+  
+                  <a href="#" target="_blank" ><i class="fa fa-instagram" id="icons"></i></a>
+                  
+                  <a href="https://twitter.com/buscastaller" target="_blank"><i class="fa fa-twitter" id="icons"></i></a>
+  
+                  
+                  
+                  <a href="https://www.youtube.com/@buscastaller8872" target="_blank" > <i class="fa fa-youtube" id="icons"></i></a>
+                 
+                  <a href="#" target="_blank" ><i  class="fa fa-whatsapp" id="icons"></i></a>
+                  
+          </div>
+          
+      </div>
+      <div class="line-1" id="line-3"></div>
+    
+       <section class="footer-nav-links" id="footer-nav-links">
+           
+              <ul>
+                  <li><a href="index12.html">Preguntas Frecuentes</a></li>
+                  <li><a href="#hero">Cobertura </a></li>
+                  <li><a href="index10.html">Únete</a></li>
+                  <li><a href="index8.html">Quiénes Somos</a></li>
+              </ul>  
+              
+              
+       </section>
+     
+      <div class="line-1" id="line-3"></div>
+     
+      <div class="footer-bottom">
+          <div><h3>Copyright © 2023 Buscas Taller, LLC. All Rights Reserved.</h3></div>
+      </div>
+  
+      
+  
+      
     </footer>
     <script>
         function myFunction() {
@@ -127,5 +698,5 @@
 
  
     <script src="BRM.js" type="module"></script>   
-    </body>
+</body>
 </html>

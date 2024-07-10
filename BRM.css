@@ -5,68 +5,208 @@
 body{
   background-color: #151515;
 }
-/*----------- nav-Block  --------------*/
-.logoIcon{
-  display: none;
-}
-.nav-Block a img{
-  width: 20rem;
-}
-.nav-Block{
-  display: flex;
-  align-items: center;
-  padding: 2rem;
-  justify-content: space-between;
-}
-.nav-links ul{
-  display: flex;
-  flex-direction: row;
-  gap: 3rem;
-}
-.nav-links ul li{
-  list-style: none;
-}
-.nav-links ul li a{
-  display: flex;
-  font-size: 1.5rem;
-  justify-content: space-evenly;
-  color: rgb(255, 255, 255);
-  text-decoration:none ;
-}
-.nav-links ul li::after{
-  content:'';
-  width:0%;
-  height:5px;
-  background:#931d36;
-  display: block;
-  margin: auto;
-  transition: 0.5s;
-}
-.nav-links ul li:hover::after{
-  width:100%;
-}
-.nav-Block a .login{
-  width: 3rem;
-}
-.mobile-nav-block{
-  display: none;
-}
-
-
 a:link {
   color: #cecece;
-
 }
-
 a:visited {
   color: #cecece;
-
 }
-
 a:hover {
   color: #cecece;
 }
-
 a:active {
   color: #cecece;
+}
+/*----------- nav-Block  --------------*/
+.nav-Block{
+  margin: 3rem;
+  display: flex;
+  justify-content: space-around;
+}
+.line{
+  width: 96%;
+  height: .3rem;
+  margin: -1rem 2rem 0 2rem;
+  background-color: #cecece;
+}
+/*----------- Logo-Block  --------------*/
+.logo-Block img{
+  width: 5rem;
+}
+/*----------- Search-Block  --------------*/
+.search-Block{
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.search-Block-top{
+  display: flex;
+}
+.in{
+  width:30rem;
+  height:2.5rem;
+  background-color: #D9D9D9;
+  border-radius: 10px;
+}
+.Nav-search-btn{
+  background-color:#931d36 ;
+  border: transparent;
+  height: 44px;
+  padding:0 1.5rem;
+  margin-left: -1rem;
+}
+::-webkit-input-placeholder { 
+  color:#931d36 ;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+/*----------- Search-Block-bottom  --------------*/
+.dropp-block-section{
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown {
+  color: #cecece;
+  gap: .2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.myDropdown {
+  color: #ffffff;
+  background-color: transparent;
+  font-size: 1.2rem;
+  padding:.05rem 1rem;
+  background-color: transparent;
+  border: 2px solid #931D36;/* Add some rounded corners */
+}
+.myDropdown option {
+  background-color: #151515;
+  color: #ffffff;
+}
+.myDropdown option:hover {
+  background-color: #931D36;
+  color: black;
+}
+/*----------- nav-links-Block  --------------*/
+.nav-links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  text-decoration: none;
+}
+.nav-links ul{
+  gap: 3rem;
+  display: flex;
+  font-size: 1.2rem;
+  list-style-type: none;
+  text-decoration: none;
+}
+.nav-links ul li i{
+  font-size: 2rem;
+   display: flex;
+   margin: 1rem;
+   justify-content: center;
+}
+.nav-links ul a{
+  text-decoration: none;
+}
+/*----------- login-Block --------------*/
+.login-Block{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.login-Block a{
+ font-size: 1.2rem;
+ padding: .5rem 1rem;
+ border-radius: .5rem;
+ text-decoration: none;
+ border:2px solid #cecece;
+ 
+}
+.SignIn-Block{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ .SignIn-Block a{
+  font-size: 1.2rem;
+  padding: .8rem;
+  text-decoration: none;
+  border-radius: .5rem;
+  background-color: #931D36;
+
+ }
+/*----------- mobile-nav-block-Block --------------*/
+.mobile-nav-block{
+  display: none;
+}
+/*----------- Video-block --------------*/
+.Video-tutorial-block{
+  display: none;
+  margin:2rem 30%;
+}
+.Video-tutorial-block i{
+ font-size: 1.5rem;
+ margin: -1rem 0 0 1rem;
+}
+/*----------- info-banner-block --------------*/
+.info-banner-block{
+  color: #cecece;
+  margin: 1rem 2rem;
+}
+.info-banner-block span{
+  font-size: 1.3rem;
+}
+.title-block{
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  margin: 0 2rem;
+}
+#title-block-section{
+  font-size: 1rem;
+  margin: 0 1rem;
+}
+/*----------- Ranking-block-Content --------------*/
+.Ranking-block-Content{
+  display: flex;
+  margin: 1rem 2rem;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/*----------- Ranking-block-left --------------*/
+.block{
+  gap: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+/*----------- block-left --------------*/
+.profilePic img{
+  width: 18rem;
+}
+/*----------- block-right --------------*/
+.block-right{
+  gap: .5rem;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+}
+.block-Num-name{
+  display: flex;
+  margin-bottom:-1.5rem;
+}
+/*----------- Ranking-block-right --------------*/
+.mapsBlock iframe{
+  position: fixed;
+  width: 45rem;
+  height: 40rem;
+  margin: -7rem 0 0 -47rem;
 }

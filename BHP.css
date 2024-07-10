@@ -1,0 +1,29 @@
+body{
+  background-image:url("Images/Img/HYP/painter.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.nav-logo img{
+  margin: 1rem;
+}
+main{
+  display: flex;
+  color: #ffff;
+  font-size: 2rem;
+  align-items: center;
+  place-items: center;
+  justify-content: center;
+  position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+.text h1{
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.829);
+
+}

@@ -1,0 +1,277 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  background-color: #151515;
+}
+/*----------- nav-Block  --------------*/
+.logoIcon{
+  display: none;
+}
+.nav-Block a img{
+  width: 20rem;
+}
+.nav-Block{
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  justify-content: space-between;
+}
+.nav-links ul{
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+.nav-links ul li{
+  list-style: none;
+}
+.nav-links ul li a{
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: space-evenly;
+  color: rgb(255, 255, 255);
+  text-decoration:none ;
+}
+.nav-links ul li::after{
+  content:'';
+  width:0%;
+  height:5px;
+  background:#931d36;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width:100%;
+}
+.nav-Block a .login{
+  width: 3rem;
+}
+.mobile-nav-block{
+  display: none;
+}
+/* ------- Union-block --------*/
+.Union-block{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+.top{
+  display: flex;
+  flex-wrap: wrap ;
+  align-items: center;
+  justify-content: center;
+}
+.Union-text-block{
+  display: flex;
+  flex-wrap: wrap ;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  color: #cecece;
+  margin: 0 2rem;
+}
+.Union-text-block h1{
+  font-size: 3rem;
+  color: #931D36;
+  text-align: center;
+}
+.Union-text-block p{
+  text-align: justify;
+  font-size: 1.3rem;
+  margin: 1rem;
+
+}
+.point{
+  margin: 1rem 2rem;
+  font-size: 1.2rem;
+}
+.number{
+  color: #931D36;
+}
+.Union-block-btn button{
+  color: #cecece;
+  font-size: 2rem;
+  padding: .5rem 2rem;
+  border-radius: 30rem;
+  border: transparent;
+  margin: 2rem;
+  background-color: #333;
+}
+/* ------- Key-Point-Block --------*/
+.Key-points-block{
+  margin: 10rem 1rem;
+}
+.key-point-banner h1{
+  color: #cecece;
+  font-size: 3rem;
+  text-align: center;
+}
+.Key-points{
+  display: flex;
+  flex-wrap: wrap ;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2rem;
+}
+.point{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #cecece;
+}
+.point img{
+  width: 10rem;
+  height: 10rem;
+  background-size: cover;
+}
+#sheild{
+  width: 10rem;
+  height: 11rem;
+}
+.point h1{
+  font-size: 1.3rem;
+}
+.point p{
+  width:18rem;
+  text-align: justify;
+}
+/* ------- Timeline-block --------*/
+.Timeline-block{
+  margin: 10rem 0;
+}
+.Timeline-block-tittle{
+  color: #cecece;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.Timeline-circle-block{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle-block{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.mark-text h1{
+ display: none; 
+ color: #cecece;
+ font-size: 1rem;
+ margin: 1.5rem;
+}
+.C-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+  border-radius: 50%;
+}
+.circle{
+  color: #cecece;
+  font-size: 2rem;
+  text-align: center;
+  
+}  
+.line{
+display: flex;
+justify-content: center;
+  height: 5px;
+  width: 85%;
+  background-color: #555;
+  margin: -1.7rem 0 0 7rem;
+}
+/* ------- Rebuttal-banner-Block --------*/
+
+.Rebuttal-banner-Block-img {
+   display: flex;
+}
+.parallelogram {
+	width: 60%;
+	height: 20rem;
+	transform: skew(20deg);
+  margin: 0 -5rem 0 8rem;
+	background: #333;
+}
+.Rebuttal-banner-Block-img img{
+  width: 30rem;
+	height: 20rem;
+	
+}
+
+
+/* ------- Footer --------*/
+footer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 10rem;
+  margin-top: 4rem;
+  justify-content: center;
+  background-color: #931D36;
+}
+.blackicon{
+  display: none;
+}
+.footerTop{
+  gap: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem;
+}
+.mediaIcons i{
+  margin: 0 1rem;
+  color: #cecece;
+  font-size: 2rem;
+}
+.footer-nav-links ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin: 3rem;
+  list-style: none;
+}
+.footer-nav-links ul li{
+  margin: 0 3rem;
+  display: flex;
+}
+.footer-nav-links a:link {
+  color: white;
+  text-decoration: none;
+}
+.footer-nav-links a:hover {
+  color: #151515;
+}
+.footer-bottom{
+  display: flex;
+  justify-content:center;
+  padding:1rem 0 ;
+  color: #cecece;
+  font-size: 1.3rem;
+}
+a:link {
+  color: #cecece;
+
+}
+
+a:visited {
+  color: #cecece;
+
+}
+
+a:hover {
+  color: #cecece;
+}
+
+a:active {
+  color: #cecece;
+}
